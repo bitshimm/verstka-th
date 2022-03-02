@@ -375,3 +375,76 @@ body {
   font-size: 14px;
   color: #fff;
 }
+.cabins__list {
+  display: flex;
+  justify-content: space-between;
+}
+.cabins__list .cabin__item {
+  background: #ffffff;
+  box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12),
+    0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+  padding: 16px;
+  width: 33%;
+}
+.photo__gallery__large img {
+  width: 100%;
+  height: 214px;
+  margin-bottom: 10px;
+}
+.photo__gallery__thumbs {
+  display: flex;
+  justify-content: space-between;
+}
+.photo__gallery__thumb__item {
+  width: 24%;
+}
+.photo__gallery__thumb__item img {
+  height: 72px;
+}
+.photo__gallery__thumb__item img,
+.photo__gallery__large img {
+  object-fit: cover;
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .cabins__list .cabin__item {
+    width: 49%;
+  }
+}
+.cabin__item__type {
+  margin: 24px 0 16px 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #242424;
+}
+.cabin__item__short__desc {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #343434;
+  margin-bottom: 10px;
+}
+.cabin__item__desc {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #7e7e7e;
+}
+.cabin__item__desc > div:last-child {
+  visibility: hidden;
+}
+.cabin__item__desc__btn {
+  font-size: 16px;
+  cursor: pointer;
+}
+.cabin__item__desc__btn i {
+  color: #006ec7;
+  margin-left: 10px;
+}
+#cboxOverlay {
+  background: rgba(0, 0, 0, 1);
+}

@@ -60,7 +60,7 @@ $(function () {
     } else {
       $(this)
         .closest(".service__on__board__accordeon__block")
-        .children(".service__on__board__accordeon__block__sub__title.active")
+        .find(".service__on__board__accordeon__block__sub__title.active")
         .removeClass("active")
         .find(".fa-chevron-up")
         .removeClass("fa-chevron-up")
@@ -71,12 +71,21 @@ $(function () {
         .addClass("fa-chevron-up");
       $(this)
         .closest(".service__on__board__accordeon__block")
-        .children(".service__on__board__accardeon__item__content")
+        .find(".service__on__board__accardeon__item__content")
         .slideUp(250);
       $(this)
         .toggleClass("active")
         .siblings(".service__on__board__accardeon__item__content")
         .slideToggle(250);
     }
+  });
+  $(".photo__gallery__thumb__item").click(function () {
+    let $galleryLink = $(this).find("img").attr("src");
+    $(".photo__gallery__large").find("img").attr("src", $galleryLink);
+    $(".photo__gallery__large").find("a").attr("href", $galleryLink);
+  });
+  $(".photo__gallery__large a.colorbox").colorbox({
+    innerHeight: 600,
+    current: "Фото {current} из {total}",
   });
 });

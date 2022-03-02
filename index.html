@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,593 +9,611 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <div
-      class="th__image"
-      style="
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.31/example1/colorbox.min.css" integrity="sha512-qDmL8zJf49wqgbTQEr0nsThYpyQkjc+ulm2zAjRXd/MCoUBuvd19fP2ugx7dnxtvMOzSJ1weNdSE+jbSnA4eWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.31/jquery.colorbox-min.js" integrity="sha512-vIQFGcvtyG7utDhKtdtJB8gZLnFdQramGsSaRNQ7yNWAnvRYAks5H2IQgvXzR8xzaSeqdcss6ZrzebbHdLECLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+<body>
+    <div class="th__image" style="
         background-image: url('/img/photo_th.png');
         background-size: cover;
         background-position: center center;
-      "
-    ></div>
+      "></div>
     <div class="container__fluid">
-      <div class="th__tabs">
-        <div class="th__tab__item active" data-tab="th-about">
-          <span>О теплоходе</span>
+        <div class="th__tabs">
+            <div class="th__tab__item active" data-tab="th-about">
+                <span>О теплоходе</span>
+            </div>
+            <div class="th__tab__item" data-tab="th-cruises">
+                <span>Круизы</span>
+            </div>
         </div>
-        <div class="th__tab__item" data-tab="th-cruises">
-          <span>Круизы</span>
+        <div class="th__tab__content" data-tab="th-about">
+            <div class="th__about__links">
+                <div class="about__link__item">
+                    <a href="#about__th">О теплоходе</a>
+                </div>
+                <div class="about__link__item">
+                    <a href="#services">Услуги и сервис</a>
+                </div>
+                <div class="about__link__item"><a href="#crew">Экипаж</a></div>
+                <div class="about__link__item"><a href="#cabins">Каюты</a></div>
+                <div class="about__link__item"><a href="#sales">Скидки</a></div>
+                <div class="about__link__item"><a href="#reviews">Отзывы</a></div>
+            </div>
+            <div class="th__about__content">
+                <div id="about__th">
+                    <span class="header__1">О теплоходе</span>
+                    <span>
+                        «Маленький принц» может принять на борт до 280 гостей, для которых
+                        подготовлены развлечения на любой вкус: от ежедневных занятий с
+                        профессиональным инструктором по одному из направлений фитнеса –
+                        пилатес, йога, степаэробик, до мастер-классов по рукоделию и
+                        концертных программ. Судно прошло полную реконструкцию в 2003 и
+                        2019 годах. К навигации-2022 теплоход будет дополнительно
+                        модернизирован: все каюты и общественные помещения будут
+                        обновлены, каюты на шлюпочной палубе будут оборудованы балконами.
+                    </span>
+                </div>
+                <div id="services">
+                    <span class="header__1">Услуги и сервис</span>
+                    <div class="th__accordion">
+                        <div class="th__accordion__item">
+                            <div class="th__accordion__item__title">
+                                <div>Питание</div>
+                                <div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="th__accordion__content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                                asperiores dicta dolorem nostrum eligendi molestiae ipsam
+                                culpa magni soluta, aspernatur nobis distinctio perferendis
+                                voluptatibus cumque esse dolores! Dolor, laudantium
+                                necessitatibus.
+                            </div>
+                        </div>
+                        <div class="th__accordion__item">
+                            <div class="th__accordion__item__title">
+                                <div>Питание</div>
+                                <div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="th__accordion__content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                                asperiores dicta dolorem nostrum eligendi molestiae ipsam
+                                culpa magni soluta, aspernatur nobis distinctio perferendis
+                                voluptatibus cumque esse dolores! Dolor, laudantium
+                                necessitatibus.
+                            </div>
+                        </div>
+                        <div class="th__accordion__item">
+                            <div class="th__accordion__item__title">
+                                <div>Питание</div>
+                                <div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="th__accordion__content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                                asperiores dicta dolorem nostrum eligendi molestiae ipsam
+                                culpa magni soluta, aspernatur nobis distinctio perferendis
+                                voluptatibus cumque esse dolores! Dolor, laudantium
+                                necessitatibus.
+                            </div>
+                        </div>
+                        <div class="th__accordion__item">
+                            <div class="th__accordion__item__title">
+                                <div>Питание</div>
+                                <div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="th__accordion__content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                                asperiores dicta dolorem nostrum eligendi molestiae ipsam
+                                culpa magni soluta, aspernatur nobis distinctio perferendis
+                                voluptatibus cumque esse dolores! Dolor, laudantium
+                                necessitatibus.
+                            </div>
+                        </div>
+                        <div class="th__accordion__item">
+                            <div class="th__accordion__item__title">
+                                <div>Питание</div>
+                                <div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="th__accordion__content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                                asperiores dicta dolorem nostrum eligendi molestiae ipsam
+                                culpa magni soluta, aspernatur nobis distinctio perferendis
+                                voluptatibus cumque esse dolores! Dolor, laudantium
+                                necessitatibus.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="th__on__board">
+                        <div class="th__on__board__item">Медицинский пункт</div>
+                        <div class="th__on__board__item">«Мюзик Холл»</div>
+                        <div class="th__on__board__item">Кофейня «Бетховен»</div>
+                        <div class="th__on__board__item">2 ресторана</div>
+                        <div class="th__on__board__item">Бар на солнечной палубе</div>
+                        <div class="th__on__board__item">
+                            Бесшумные мультиформатные дискотеки в наушниках
+                        </div>
+                        <div class="th__on__board__item">Широкоформатный кинотеатр</div>
+                        <div class="th__on__board__item">Пункт проката</div>
+                        <div class="th__on__board__item">Мастерская «Самоделкино»</div>
+                        <div class="th__on__board__item">Сауна</div>
+                        <div class="th__on__board__item">Спутниковое телевидение</div>
+                    </div>
+                    <div class="service__on__board">
+                        <div class="service__on__board__accordeon">
+                            <div class="service__on__board__accordeon__block">
+                                <div class="service__on__board__accordeon__block__title">
+                                    Комфорт
+                                </div>
+                                <div class="service__on__board__accardeon__item">
+                                    <div class="service__on__board__accordeon__block__sub__title">
+                                        <div>Удобные каюты</div>
+                                        <div>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="service__on__board__accardeon__item__content">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Vero eius dolor fugiat quidem quam unde laborum. Quibusdam
+                                        laudantium iste sint fugit deserunt, ab dolorum amet cum,
+                                        reiciendis, exercitationem eveniet. Expedita.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service__on__board__accordeon__block">
+                                <div class="service__on__board__accordeon__block__title">
+                                    Безопасность
+                                </div>
+                                <div class="service__on__board__accardeon__item">
+                                    <div class="service__on__board__accordeon__block__sub__title">
+                                        <div>Безопасность — главный приоритет</div>
+                                        <div>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="service__on__board__accardeon__item__content">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Vero eius dolor fugiat quidem quam unde laborum. Quibusdam
+                                        laudantium iste sint fugit deserunt, ab dolorum amet cum,
+                                        reiciendis, exercitationem eveniet. Expedita. Lorem ipsum
+                                        dolor sit amet consectetur adipisicing elit. Adipisci, in.
+                                        Tempore culpa quidem accusantium reiciendis, error illum
+                                        neque cupiditate, pariatur dolorum officiis fugit in eaque
+                                        ullam fuga illo itaque enim, eum sapiente. Veniam voluptas
+                                        itaque corrupti at, fugiat assumenda eos minus doloribus
+                                        vero voluptatem temporibus beatae maxime repellendus
+                                        debitis eum ex voluptatum repudiandae odit ipsum. Enim,
+                                        maiores consequatur! Tenetur officia aperiam consequatur
+                                        repellat veritatis corporis nesciunt assumenda
+                                        exercitationem maxime dolorum! Nobis eligendi adipisci
+                                        obcaecati earum amet nisi quibusdam libero consequatur
+                                        animi ducimus illum magnam ab quae iure ad illo a enim,
+                                        dolores soluta porro! Facere, ut? Hic in eius odio
+                                        quibusdam obcaecati cupiditate voluptatibus rem deserunt
+                                        sint consequuntur iure dolorum culpa, facere laborum
+                                        consectetur quidem aliquam cumque repellat quas eos
+                                        quaerat ex asperiores. Eius quas voluptatum laboriosam
+                                        unde, facere animi debitis architecto harum tempora
+                                        repudiandae corporis! Fugiat reprehenderit, eum eos
+                                        blanditiis debitis delectus nostrum sed, culpa iste ab non
+                                        aliquid illum? Praesentium, pariatur debitis quae amet
+                                        aperiam magni natus nihil a exercitationem ipsum
+                                        consequuntur molestiae, repudiandae excepturi commodi
+                                        dolorem sint. Odit quis error beatae autem tempora ad
+                                        cupiditate iste assumenda illo sequi vitae deleniti,
+                                        magnam sint laudantium, minus harum, quo modi aut! Veniam,
+                                        pariatur velit eos fugit soluta commodi ullam!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service__on__board__accordeon__block">
+                                <div class="service__on__board__accordeon__block__title">
+                                    Сервис
+                                </div>
+                                <div class="service__on__board__accardeon__item">
+                                    <div class="service__on__board__accordeon__block__sub__title">
+                                        <div>Команда</div>
+                                        <div>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="service__on__board__accardeon__item__content">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Eum veniam hic, sit, at excepturi autem ea numquam eos
+                                        rem, temporibus quaerat ducimus ab officia inventore!
+                                        Laborum placeat harum voluptatum corporis, velit expedita
+                                        blanditiis officiis adipisci ratione nobis impedit officia
+                                        ipsa soluta, sint saepe commodi. Libero inventore vero
+                                        sint possimus nihil ad facere perferendis error aut nam
+                                        veniam rem tenetur recusandae, aliquid illo dolor optio?
+                                        Sapiente veniam et optio quis unde praesentium pariatur
+                                        quaerat, iusto eligendi suscipit. Veniam, blanditiis.
+                                        Molestiae temporibus, debitis, facilis ipsum enim soluta
+                                        architecto cupiditate, officiis quaerat dolorem a amet
+                                        necessitatibus doloribus ipsam sunt similique rem! Tempore
+                                        recusandae adipisci vero at ipsa quibusdam aliquam
+                                        molestias, officia eos dolore cumque, expedita quisquam
+                                        ullam, aut dignissimos. Unde voluptates impedit in
+                                        corrupti magni. Ipsam quis quam veritatis, placeat impedit
+                                        porro rerum. Accusantium sequi facere iusto non
+                                        perspiciatis quod ipsam quidem ipsa exercitationem
+                                        laboriosam consequuntur, commodi porro repellendus ut
+                                        similique natus dolore enim, alias hic quis aperiam quos
+                                        qui. Adipisci deserunt ipsam ad. Labore consequatur id
+                                        odio, voluptas ipsum ab! Tempora in ut culpa quasi nemo
+                                        voluptas illo a magnam officiis praesentium labore debitis
+                                        sunt minus maxime modi, facilis libero natus voluptate.
+                                        Sapiente quos suscipit aspernatur, ea natus sint harum
+                                        autem. Autem.
+                                    </div>
+                                </div>
+                                <div class="service__on__board__accardeon__item">
+                                    <div class="service__on__board__accordeon__block__sub__title">
+                                        <div>Отдых со вкусом</div>
+                                        <div>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="service__on__board__accardeon__item__content">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Velit assumenda sed recusandae quidem, placeat aperiam cum
+                                        incidunt itaque veritatis pariatur debitis. Magni, quo
+                                        consequatur rem repudiandae non molestiae dignissimos
+                                        incidunt sit nobis enim corrupti iste? Amet, soluta.
+                                        Debitis ab, neque modi ipsum commodi doloribus numquam
+                                        harum veritatis hic aliquam blanditiis enim rerum ipsam et
+                                        eaque in eligendi perspiciatis accusantium quo quae
+                                        adipisci! Sunt quo tenetur consequuntur veniam vero
+                                        debitis, voluptate temporibus numquam aliquam impedit
+                                        autem eveniet assumenda voluptates sit alias deleniti
+                                        culpa labore fugiat minima asperiores? Deleniti nemo nisi
+                                        ea impedit iure amet maiores qui sint libero incidunt
+                                        suscipit necessitatibus cumque commodi, excepturi id, quas
+                                        dolorem magni saepe modi officiis distinctio mollitia
+                                        adipisci, ut error? Nesciunt temporibus, quidem magnam
+                                        aspernatur fuga facilis nostrum beatae amet nemo omnis
+                                        corrupti similique ut excepturi minus aliquam quas odio.
+                                        Quisquam ullam porro, aliquid accusantium quis aliquam
+                                        voluptates ut itaque, nobis reiciendis sunt impedit
+                                        numquam libero minus ipsam rem deleniti est doloribus
+                                        obcaecati quos officiis esse cumque reprehenderit?
+                                        Possimus ullam cum nisi. Corrupti maiores iure
+                                        reprehenderit! Vero dolorem tempora commodi molestiae
+                                        adipisci excepturi quam soluta assumenda? Minima
+                                        voluptatum totam delectus eligendi officiis, unde ea
+                                        recusandae impedit labore voluptate saepe perspiciatis
+                                        consequuntur laborum nobis, a veritatis.
+                                    </div>
+                                </div>
+                                <div class="service__on__board__accardeon__item">
+                                    <div class="service__on__board__accordeon__block__sub__title">
+                                        <div>Тематические ужины</div>
+                                        <div>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="service__on__board__accardeon__item__content">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Velit assumenda sed recusandae quidem, placeat aperiam cum
+                                        incidunt itaque veritatis pariatur debitis. Magni, quo
+                                        consequatur rem repudiandae non molestiae dignissimos
+                                        incidunt sit nobis enim corrupti iste? Amet, soluta.
+                                        Debitis ab, neque modi ipsum commodi doloribus numquam
+                                        harum veritatis hic aliquam blanditiis enim rerum ipsam et
+                                        eaque in eligendi perspiciatis accusantium quo quae
+                                        adipisci! Sunt quo tenetur consequuntur veniam vero
+                                        debitis, voluptate temporibus numquam aliquam impedit
+                                        autem eveniet assumenda voluptates sit alias deleniti
+                                        culpa labore fugiat minima asperiores? Deleniti nemo nisi
+                                        ea impedit iure amet maiores qui sint libero incidunt
+                                        suscipit necessitatibus cumque commodi, excepturi id, quas
+                                        dolorem magni saepe modi officiis distinctio mollitia
+                                        adipisci, ut error? Nesciunt temporibus, quidem magnam
+                                        aspernatur fuga facilis nostrum beatae amet nemo omnis
+                                        corrupti similique ut excepturi minus aliquam quas odio.
+                                        Quisquam ullam porro, aliquid accusantium quis aliquam
+                                        voluptates ut itaque, nobis reiciendis sunt impedit
+                                        numquam libero minus ipsam rem deleniti est doloribus
+                                        obcaecati quos officiis esse cumque reprehenderit?
+                                        Possimus ullam cum nisi. Corrupti maiores iure
+                                        reprehenderit! Vero dolorem tempora commodi molestiae
+                                        adipisci excepturi quam soluta assumenda? Minima
+                                        voluptatum totam delectus eligendi officiis, unde ea
+                                        recusandae impedit labore voluptate saepe perspiciatis
+                                        consequuntur laborum nobis, a veritatis.
+                                    </div>
+                                </div>
+                                <div class="service__on__board__accardeon__item">
+                                    <div class="service__on__board__accordeon__block__sub__title">
+                                        <div>Экскурсионное обслуживание</div>
+                                        <div>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="service__on__board__accardeon__item__content">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Velit assumenda sed recusandae quidem, placeat aperiam cum
+                                        incidunt itaque veritatis pariatur debitis. Magni, quo
+                                        consequatur rem repudiandae non molestiae dignissimos
+                                        incidunt sit nobis enim corrupti iste? Amet, soluta.
+                                        Debitis ab, neque modi ipsum commodi doloribus numquam
+                                        harum veritatis hic aliquam blanditiis enim rerum ipsam et
+                                        eaque in eligendi perspiciatis accusantium quo quae
+                                        adipisci! Sunt quo tenetur consequuntur veniam vero
+                                        debitis, voluptate temporibus numquam aliquam impedit
+                                        autem eveniet assumenda voluptates sit alias deleniti
+                                        culpa labore fugiat minima asperiores? Deleniti nemo nisi
+                                        ea impedit iure amet maiores qui sint libero incidunt
+                                        suscipit necessitatibus cumque commodi, excepturi id, quas
+                                        dolorem magni saepe modi officiis distinctio mollitia
+                                        adipisci, ut error? Nesciunt temporibus, quidem magnam
+                                        aspernatur fuga facilis nostrum beatae amet nemo omnis
+                                        corrupti similique ut excepturi minus aliquam quas odio.
+                                        Quisquam ullam porro, aliquid accusantium quis aliquam
+                                        voluptates ut itaque, nobis reiciendis sunt impedit
+                                        numquam libero minus ipsam rem deleniti est doloribus
+                                        obcaecati quos officiis esse cumque reprehenderit?
+                                        Possimus ullam cum nisi. Corrupti maiores iure
+                                        reprehenderit! Vero dolorem tempora commodi molestiae
+                                        adipisci excepturi quam soluta assumenda? Minima
+                                        voluptatum totam delectus eligendi officiis, unde ea
+                                        recusandae impedit labore voluptate saepe perspiciatis
+                                        consequuntur laborum nobis, a veritatis.
+                                    </div>
+                                </div>
+                                <div class="service__on__board__accardeon__item">
+                                    <div class="service__on__board__accordeon__block__sub__title">
+                                        <div>Сюрприз в каюте и бортовая газета</div>
+                                        <div>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="service__on__board__accardeon__item__content">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Velit assumenda sed recusandae quidem, placeat aperiam cum
+                                        incidunt itaque veritatis pariatur debitis. Magni, quo
+                                        consequatur rem repudiandae non molestiae dignissimos
+                                        incidunt sit nobis enim corrupti iste? Amet, soluta.
+                                        Debitis ab, neque modi ipsum commodi doloribus numquam
+                                        harum veritatis hic aliquam blanditiis enim rerum ipsam et
+                                        eaque in eligendi perspiciatis accusantium quo quae
+                                        adipisci! Sunt quo tenetur consequuntur veniam vero
+                                        debitis, voluptate temporibus numquam aliquam impedit
+                                        autem eveniet assumenda voluptates sit alias deleniti
+                                        culpa labore fugiat minima asperiores? Deleniti nemo nisi
+                                        ea impedit iure amet maiores qui sint libero incidunt
+                                        suscipit necessitatibus cumque commodi, excepturi id, quas
+                                        dolorem magni saepe modi officiis distinctio mollitia
+                                        adipisci, ut error? Nesciunt temporibus, quidem magnam
+                                        aspernatur fuga facilis nostrum beatae amet nemo omnis
+                                        corrupti similique ut excepturi minus aliquam quas odio.
+                                        Quisquam ullam porro, aliquid accusantium quis aliquam
+                                        voluptates ut itaque, nobis reiciendis sunt impedit
+                                        numquam libero minus ipsam rem deleniti est doloribus
+                                        obcaecati quos officiis esse cumque reprehenderit?
+                                        Possimus ullam cum nisi. Corrupti maiores iure
+                                        reprehenderit! Vero dolorem tempora commodi molestiae
+                                        adipisci excepturi quam soluta assumenda? Minima
+                                        voluptatum totam delectus eligendi officiis, unde ea
+                                        recusandae impedit labore voluptate saepe perspiciatis
+                                        consequuntur laborum nobis, a veritatis.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="crew">
+                    <span class="header__1"> Капитан и дирекция круиза </span>
+                    <div class="crew__items">
+                        <div class="crew__item">
+                            <div class="crew__item__photo">
+                                <img src="img/cruise_director.png" alt="" />
+                            </div>
+                            <div class="crew__item__position">Директор круиза</div>
+                            <div class="crew__item__fullname">
+                                Захарова Ольга Владимировна
+                            </div>
+                        </div>
+                        <div class="crew__item">
+                            <div class="crew__item__photo">
+                                <img src="img/captain.png" alt="" />
+                            </div>
+                            <div class="crew__item__position">Капитан</div>
+                            <div class="crew__item__fullname">
+                                Быков Алексей Анатольевич
+                            </div>
+                        </div>
+                        <div class="crew__item">
+                            <div class="crew__item__photo">
+                                <img src="img/restuorant_director.png" alt="" />
+                            </div>
+                            <div class="crew__item__position">Директор ресторана</div>
+                            <div class="crew__item__fullname">
+                                Чернова Елена Вячеславовна
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cabins">
+                    <span class="header__1">Cхема палуб теплохода “Лунная Соната”</span>
+                    <div class="conventions">
+                        <div class="conventions__item">Условные обозначения:</div>
+                        <div class="conventions__item">
+                            <div class="conventions__circle">2+1</div>
+                            Количество мест в каюте (основные +дополнительные)
+                        </div>
+                        <div class="conventions__item">
+                            <div class="conventions__circle">3</div>
+                            Каюта имеет 2 яруса
+                        </div>
+                    </div>
+                    <div class="decks">
+                        <div class="deck1">
+                            <div class="deck__title">Шлюпочная палуба</div>
+                            <div class="deck"></div>
+                        </div>
+                        <div class="deck2">
+                            <div class="deck__title">Средняя палуба</div>
+                            <div class="deck"></div>
+                        </div>
+                        <div class="deck3">
+                            <div class="deck__title">Главная палуба</div>
+                            <div class="deck"></div>
+                        </div>
+                        <div class="deck4">
+                            <div class="deck__title">Нижняя палуба</div>
+                            <div class="deck"></div>
+                        </div>
+                    </div>
+                    <div class="cabin__types">
+                        <div class="cabin__types__title">Типы кают:</div>
+                        <div class="cabin__types__list">
+                            <div class="a4h">
+                                <div class="type__rect"></div>
+                                <div class="type__title">A4H</div>
+                            </div>
+                            <div class="a2__comfort">
+                                <div class="type__rect"></div>
+                                <div class="type__title">A2 комфорт</div>
+                            </div>
+                            <div class="a1__plus__balcon">
+                                <div class="type__rect"></div>
+                                <div class="type__title">A1+ с балконом</div>
+                            </div>
+                            <div class="a2h">
+                                <div class="type__rect"></div>
+                                <div class="type__title">A2H</div>
+                            </div>
+                            <div class="a1">
+                                <div class="type__rect"></div>
+                                <div class="type__title">A1</div>
+                            </div>
+                            <div class="pol__lux__balcon__b">
+                                <div class="type__rect"></div>
+                                <div class="type__title">Полулюкс с балконом Б</div>
+                            </div>
+                            <div class="a4__3">
+                                <div class="type__rect"></div>
+                                <div class="type__title">А4(III)</div>
+                            </div>
+                            <div class="pol__lux">
+                                <div class="type__rect"></div>
+                                <div class="type__title">Полулюкс</div>
+                            </div>
+                            <div class="pol__lux__balcon__a">
+                                <div class="type__rect"></div>
+                                <div class="type__title">полулюкс с балкном A</div>
+                            </div>
+                            <div class="a2__3">
+                                <div class="type__rect"></div>
+                                <div class="type__title">А2(III)</div>
+                            </div>
+                            <div class="a1__comfort">
+                                <div class="type__rect"></div>
+                                <div class="type__title">A1 комфорт</div>
+                            </div>
+                            <div class="lux__balcon">
+                                <div class="type__rect"></div>
+                                <div class="type__title">Люкс с балкном</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="th__cabins">
+                        <div class="header__1">Каюты теплохода “Лунная Соната”</div>
+                        <div class="deck__title">Подбор каюты</div>
+                        <div class="cabin__filter">
+                            <div>
+                                Колличество пассажиров
+                            </div>
+                            <div>
+                                Взрослых <i class="bi bi-dash-circle"></i> 1 <i class="bi bi-plus-circle"></i>
+                            </div>
+                            <div>
+                                Детей (2-11 лет) <i class="bi bi-dash-circle"></i> 1 <i
+                                    class="bi bi-plus-circle"></i></i>
+                            </div>
+                            <div>
+                                Детей (12-17 лет) <i class="bi bi-dash-circle"></i> 1 <i class="bi bi-plus-circle"></i>
+                            </div>
+                            <div>
+                                <div class="filter__btn">
+                                    ПОДОБРАТЬ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cabins__list">
+                            <div class="cabin__item">
+                                <div class="cabin__photo__gallery">
+                                    <div class="photo__gallery__large" >
+                                        <a href="img/cabin__photo1.jpg" class="colorbox" data-fancybox><img src="img/cabin__photo1.jpg" alt=""></a>
+                                        
+                                    </div>
+                                    <div class="photo__gallery__thumbs">
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo2.jpg" alt="">
+                                        </div>
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo3.jpg" alt="">
+                                        </div>
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo4.jpg" alt="">
+                                        </div>
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabin__item__type">
+                                    Полулюкс с балконом Б 
+                                </div>
+                                <div class="cabin__item__short__desc">
+                                    Двухместная каюта увеличенной площади со всеми удобствами, расположенная на шлюпочной палубе
+                                </div>
+                                <div class="cabin__item__desc">
+                                    <div class="cabin__item__desc__btn">
+                                        Показать полностью <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                        <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной палубе</li>
+                                        <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной палубе</li>
+                                        <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной палубе</li>
+                                        <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной палубе</li>
+                                        <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной палубе</li>
+                                    </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="th__tab__content" data-tab="th-about">
-        <div class="th__about__links">
-          <div class="about__link__item">
-            <a href="#about__th">О теплоходе</a>
-          </div>
-          <div class="about__link__item">
-            <a href="#services">Услуги и сервис</a>
-          </div>
-          <div class="about__link__item"><a href="#crew">Экипаж</a></div>
-          <div class="about__link__item"><a href="#cabins">Каюты</a></div>
-          <div class="about__link__item"><a href="#sales">Скидки</a></div>
-          <div class="about__link__item"><a href="#reviews">Отзывы</a></div>
-        </div>
-        <div class="th__about__content">
-          <div id="about__th">
-            <span class="header__1">О теплоходе</span>
-            <span>
-              «Маленький принц» может принять на борт до 280 гостей, для которых
-              подготовлены развлечения на любой вкус: от ежедневных занятий с
-              профессиональным инструктором по одному из направлений фитнеса –
-              пилатес, йога, степаэробик, до мастер-классов по рукоделию и
-              концертных программ. Судно прошло полную реконструкцию в 2003 и
-              2019 годах. К навигации-2022 теплоход будет дополнительно
-              модернизирован: все каюты и общественные помещения будут
-              обновлены, каюты на шлюпочной палубе будут оборудованы балконами.
-            </span>
-          </div>
-          <div id="services">
-            <span class="header__1">Услуги и сервис</span>
-            <div class="th__accordion">
-              <div class="th__accordion__item">
-                <div class="th__accordion__item__title">
-                  <div>Питание</div>
-                  <div>
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </div>
-                </div>
-                <div class="th__accordion__content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  asperiores dicta dolorem nostrum eligendi molestiae ipsam
-                  culpa magni soluta, aspernatur nobis distinctio perferendis
-                  voluptatibus cumque esse dolores! Dolor, laudantium
-                  necessitatibus.
-                </div>
-              </div>
-              <div class="th__accordion__item">
-                <div class="th__accordion__item__title">
-                  <div>Питание</div>
-                  <div>
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </div>
-                </div>
-                <div class="th__accordion__content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  asperiores dicta dolorem nostrum eligendi molestiae ipsam
-                  culpa magni soluta, aspernatur nobis distinctio perferendis
-                  voluptatibus cumque esse dolores! Dolor, laudantium
-                  necessitatibus.
-                </div>
-              </div>
-              <div class="th__accordion__item">
-                <div class="th__accordion__item__title">
-                  <div>Питание</div>
-                  <div>
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </div>
-                </div>
-                <div class="th__accordion__content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  asperiores dicta dolorem nostrum eligendi molestiae ipsam
-                  culpa magni soluta, aspernatur nobis distinctio perferendis
-                  voluptatibus cumque esse dolores! Dolor, laudantium
-                  necessitatibus.
-                </div>
-              </div>
-              <div class="th__accordion__item">
-                <div class="th__accordion__item__title">
-                  <div>Питание</div>
-                  <div>
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </div>
-                </div>
-                <div class="th__accordion__content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  asperiores dicta dolorem nostrum eligendi molestiae ipsam
-                  culpa magni soluta, aspernatur nobis distinctio perferendis
-                  voluptatibus cumque esse dolores! Dolor, laudantium
-                  necessitatibus.
-                </div>
-              </div>
-              <div class="th__accordion__item">
-                <div class="th__accordion__item__title">
-                  <div>Питание</div>
-                  <div>
-                    <i class="fa-solid fa-chevron-down"></i>
-                  </div>
-                </div>
-                <div class="th__accordion__content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  asperiores dicta dolorem nostrum eligendi molestiae ipsam
-                  culpa magni soluta, aspernatur nobis distinctio perferendis
-                  voluptatibus cumque esse dolores! Dolor, laudantium
-                  necessitatibus.
-                </div>
-              </div>
-            </div>
-            <div class="th__on__board">
-              <div class="th__on__board__item">Медицинский пункт</div>
-              <div class="th__on__board__item">«Мюзик Холл»</div>
-              <div class="th__on__board__item">Кофейня «Бетховен»</div>
-              <div class="th__on__board__item">2 ресторана</div>
-              <div class="th__on__board__item">Бар на солнечной палубе</div>
-              <div class="th__on__board__item">
-                Бесшумные мультиформатные дискотеки в наушниках
-              </div>
-              <div class="th__on__board__item">Широкоформатный кинотеатр</div>
-              <div class="th__on__board__item">Пункт проката</div>
-              <div class="th__on__board__item">Мастерская «Самоделкино»</div>
-              <div class="th__on__board__item">Сауна</div>
-              <div class="th__on__board__item">Спутниковое телевидение</div>
-            </div>
-            <div class="service__on__board">
-              <div class="service__on__board__accordeon">
-                <div class="service__on__board__accordeon__block">
-                  <div class="service__on__board__accordeon__block__title">
-                    Комфорт
-                  </div>
-                  <div class="service__on__board__accardeon__item">
-                    <div
-                      class="service__on__board__accordeon__block__sub__title"
-                    >
-                      <div>Удобные каюты</div>
-                      <div>
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </div>
-                    </div>
-                    <div class="service__on__board__accardeon__item__content">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Vero eius dolor fugiat quidem quam unde laborum. Quibusdam
-                      laudantium iste sint fugit deserunt, ab dolorum amet cum,
-                      reiciendis, exercitationem eveniet. Expedita.
-                    </div>
-                  </div>
-                </div>
-                <div class="service__on__board__accordeon__block">
-                  <div class="service__on__board__accordeon__block__title">
-                    Безопасность
-                  </div>
-                  <div class="service__on__board__accardeon__item">
-                    <div
-                      class="service__on__board__accordeon__block__sub__title"
-                    >
-                      <div>Безопасность — главный приоритет</div>
-                      <div>
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </div>
-                    </div>
-                    <div class="service__on__board__accardeon__item__content">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Vero eius dolor fugiat quidem quam unde laborum. Quibusdam
-                      laudantium iste sint fugit deserunt, ab dolorum amet cum,
-                      reiciendis, exercitationem eveniet. Expedita. Lorem ipsum
-                      dolor sit amet consectetur adipisicing elit. Adipisci, in.
-                      Tempore culpa quidem accusantium reiciendis, error illum
-                      neque cupiditate, pariatur dolorum officiis fugit in eaque
-                      ullam fuga illo itaque enim, eum sapiente. Veniam voluptas
-                      itaque corrupti at, fugiat assumenda eos minus doloribus
-                      vero voluptatem temporibus beatae maxime repellendus
-                      debitis eum ex voluptatum repudiandae odit ipsum. Enim,
-                      maiores consequatur! Tenetur officia aperiam consequatur
-                      repellat veritatis corporis nesciunt assumenda
-                      exercitationem maxime dolorum! Nobis eligendi adipisci
-                      obcaecati earum amet nisi quibusdam libero consequatur
-                      animi ducimus illum magnam ab quae iure ad illo a enim,
-                      dolores soluta porro! Facere, ut? Hic in eius odio
-                      quibusdam obcaecati cupiditate voluptatibus rem deserunt
-                      sint consequuntur iure dolorum culpa, facere laborum
-                      consectetur quidem aliquam cumque repellat quas eos
-                      quaerat ex asperiores. Eius quas voluptatum laboriosam
-                      unde, facere animi debitis architecto harum tempora
-                      repudiandae corporis! Fugiat reprehenderit, eum eos
-                      blanditiis debitis delectus nostrum sed, culpa iste ab non
-                      aliquid illum? Praesentium, pariatur debitis quae amet
-                      aperiam magni natus nihil a exercitationem ipsum
-                      consequuntur molestiae, repudiandae excepturi commodi
-                      dolorem sint. Odit quis error beatae autem tempora ad
-                      cupiditate iste assumenda illo sequi vitae deleniti,
-                      magnam sint laudantium, minus harum, quo modi aut! Veniam,
-                      pariatur velit eos fugit soluta commodi ullam!
-                    </div>
-                  </div>
-                </div>
-                <div class="service__on__board__accordeon__block">
-                  <div class="service__on__board__accordeon__block__title">
-                    Сервис
-                  </div>
-                  <div class="service__on__board__accardeon__item">
-                    <div
-                      class="service__on__board__accordeon__block__sub__title"
-                    >
-                      <div>Команда</div>
-                      <div>
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </div>
-                    </div>
-                    <div class="service__on__board__accardeon__item__content">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Eum veniam hic, sit, at excepturi autem ea numquam eos
-                      rem, temporibus quaerat ducimus ab officia inventore!
-                      Laborum placeat harum voluptatum corporis, velit expedita
-                      blanditiis officiis adipisci ratione nobis impedit officia
-                      ipsa soluta, sint saepe commodi. Libero inventore vero
-                      sint possimus nihil ad facere perferendis error aut nam
-                      veniam rem tenetur recusandae, aliquid illo dolor optio?
-                      Sapiente veniam et optio quis unde praesentium pariatur
-                      quaerat, iusto eligendi suscipit. Veniam, blanditiis.
-                      Molestiae temporibus, debitis, facilis ipsum enim soluta
-                      architecto cupiditate, officiis quaerat dolorem a amet
-                      necessitatibus doloribus ipsam sunt similique rem! Tempore
-                      recusandae adipisci vero at ipsa quibusdam aliquam
-                      molestias, officia eos dolore cumque, expedita quisquam
-                      ullam, aut dignissimos. Unde voluptates impedit in
-                      corrupti magni. Ipsam quis quam veritatis, placeat impedit
-                      porro rerum. Accusantium sequi facere iusto non
-                      perspiciatis quod ipsam quidem ipsa exercitationem
-                      laboriosam consequuntur, commodi porro repellendus ut
-                      similique natus dolore enim, alias hic quis aperiam quos
-                      qui. Adipisci deserunt ipsam ad. Labore consequatur id
-                      odio, voluptas ipsum ab! Tempora in ut culpa quasi nemo
-                      voluptas illo a magnam officiis praesentium labore debitis
-                      sunt minus maxime modi, facilis libero natus voluptate.
-                      Sapiente quos suscipit aspernatur, ea natus sint harum
-                      autem. Autem.
-                    </div>
-                  </div>
-                  <div class="service__on__board__accardeon__item">
-                    <div
-                      class="service__on__board__accordeon__block__sub__title"
-                    >
-                      <div>Отдых со вкусом</div>
-                      <div>
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </div>
-                    </div>
-                    <div class="service__on__board__accardeon__item__content">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Velit assumenda sed recusandae quidem, placeat aperiam cum
-                      incidunt itaque veritatis pariatur debitis. Magni, quo
-                      consequatur rem repudiandae non molestiae dignissimos
-                      incidunt sit nobis enim corrupti iste? Amet, soluta.
-                      Debitis ab, neque modi ipsum commodi doloribus numquam
-                      harum veritatis hic aliquam blanditiis enim rerum ipsam et
-                      eaque in eligendi perspiciatis accusantium quo quae
-                      adipisci! Sunt quo tenetur consequuntur veniam vero
-                      debitis, voluptate temporibus numquam aliquam impedit
-                      autem eveniet assumenda voluptates sit alias deleniti
-                      culpa labore fugiat minima asperiores? Deleniti nemo nisi
-                      ea impedit iure amet maiores qui sint libero incidunt
-                      suscipit necessitatibus cumque commodi, excepturi id, quas
-                      dolorem magni saepe modi officiis distinctio mollitia
-                      adipisci, ut error? Nesciunt temporibus, quidem magnam
-                      aspernatur fuga facilis nostrum beatae amet nemo omnis
-                      corrupti similique ut excepturi minus aliquam quas odio.
-                      Quisquam ullam porro, aliquid accusantium quis aliquam
-                      voluptates ut itaque, nobis reiciendis sunt impedit
-                      numquam libero minus ipsam rem deleniti est doloribus
-                      obcaecati quos officiis esse cumque reprehenderit?
-                      Possimus ullam cum nisi. Corrupti maiores iure
-                      reprehenderit! Vero dolorem tempora commodi molestiae
-                      adipisci excepturi quam soluta assumenda? Minima
-                      voluptatum totam delectus eligendi officiis, unde ea
-                      recusandae impedit labore voluptate saepe perspiciatis
-                      consequuntur laborum nobis, a veritatis.
-                    </div>
-                  </div>
-                  <div class="service__on__board__accardeon__item">
-                    <div
-                      class="service__on__board__accordeon__block__sub__title"
-                    >
-                      <div>Тематические ужины</div>
-                      <div>
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </div>
-                    </div>
-                    <div class="service__on__board__accardeon__item__content">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Velit assumenda sed recusandae quidem, placeat aperiam cum
-                      incidunt itaque veritatis pariatur debitis. Magni, quo
-                      consequatur rem repudiandae non molestiae dignissimos
-                      incidunt sit nobis enim corrupti iste? Amet, soluta.
-                      Debitis ab, neque modi ipsum commodi doloribus numquam
-                      harum veritatis hic aliquam blanditiis enim rerum ipsam et
-                      eaque in eligendi perspiciatis accusantium quo quae
-                      adipisci! Sunt quo tenetur consequuntur veniam vero
-                      debitis, voluptate temporibus numquam aliquam impedit
-                      autem eveniet assumenda voluptates sit alias deleniti
-                      culpa labore fugiat minima asperiores? Deleniti nemo nisi
-                      ea impedit iure amet maiores qui sint libero incidunt
-                      suscipit necessitatibus cumque commodi, excepturi id, quas
-                      dolorem magni saepe modi officiis distinctio mollitia
-                      adipisci, ut error? Nesciunt temporibus, quidem magnam
-                      aspernatur fuga facilis nostrum beatae amet nemo omnis
-                      corrupti similique ut excepturi minus aliquam quas odio.
-                      Quisquam ullam porro, aliquid accusantium quis aliquam
-                      voluptates ut itaque, nobis reiciendis sunt impedit
-                      numquam libero minus ipsam rem deleniti est doloribus
-                      obcaecati quos officiis esse cumque reprehenderit?
-                      Possimus ullam cum nisi. Corrupti maiores iure
-                      reprehenderit! Vero dolorem tempora commodi molestiae
-                      adipisci excepturi quam soluta assumenda? Minima
-                      voluptatum totam delectus eligendi officiis, unde ea
-                      recusandae impedit labore voluptate saepe perspiciatis
-                      consequuntur laborum nobis, a veritatis.
-                    </div>
-                  </div>
-                  <div class="service__on__board__accardeon__item">
-                    <div
-                      class="service__on__board__accordeon__block__sub__title"
-                    >
-                      <div>Экскурсионное обслуживание</div>
-                      <div>
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </div>
-                    </div>
-                    <div class="service__on__board__accardeon__item__content">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Velit assumenda sed recusandae quidem, placeat aperiam cum
-                      incidunt itaque veritatis pariatur debitis. Magni, quo
-                      consequatur rem repudiandae non molestiae dignissimos
-                      incidunt sit nobis enim corrupti iste? Amet, soluta.
-                      Debitis ab, neque modi ipsum commodi doloribus numquam
-                      harum veritatis hic aliquam blanditiis enim rerum ipsam et
-                      eaque in eligendi perspiciatis accusantium quo quae
-                      adipisci! Sunt quo tenetur consequuntur veniam vero
-                      debitis, voluptate temporibus numquam aliquam impedit
-                      autem eveniet assumenda voluptates sit alias deleniti
-                      culpa labore fugiat minima asperiores? Deleniti nemo nisi
-                      ea impedit iure amet maiores qui sint libero incidunt
-                      suscipit necessitatibus cumque commodi, excepturi id, quas
-                      dolorem magni saepe modi officiis distinctio mollitia
-                      adipisci, ut error? Nesciunt temporibus, quidem magnam
-                      aspernatur fuga facilis nostrum beatae amet nemo omnis
-                      corrupti similique ut excepturi minus aliquam quas odio.
-                      Quisquam ullam porro, aliquid accusantium quis aliquam
-                      voluptates ut itaque, nobis reiciendis sunt impedit
-                      numquam libero minus ipsam rem deleniti est doloribus
-                      obcaecati quos officiis esse cumque reprehenderit?
-                      Possimus ullam cum nisi. Corrupti maiores iure
-                      reprehenderit! Vero dolorem tempora commodi molestiae
-                      adipisci excepturi quam soluta assumenda? Minima
-                      voluptatum totam delectus eligendi officiis, unde ea
-                      recusandae impedit labore voluptate saepe perspiciatis
-                      consequuntur laborum nobis, a veritatis.
-                    </div>
-                  </div>
-                  <div class="service__on__board__accardeon__item">
-                    <div
-                      class="service__on__board__accordeon__block__sub__title"
-                    >
-                      <div>Сюрприз в каюте и бортовая газета</div>
-                      <div>
-                        <i class="fa-solid fa-chevron-down"></i>
-                      </div>
-                    </div>
-                    <div class="service__on__board__accardeon__item__content">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Velit assumenda sed recusandae quidem, placeat aperiam cum
-                      incidunt itaque veritatis pariatur debitis. Magni, quo
-                      consequatur rem repudiandae non molestiae dignissimos
-                      incidunt sit nobis enim corrupti iste? Amet, soluta.
-                      Debitis ab, neque modi ipsum commodi doloribus numquam
-                      harum veritatis hic aliquam blanditiis enim rerum ipsam et
-                      eaque in eligendi perspiciatis accusantium quo quae
-                      adipisci! Sunt quo tenetur consequuntur veniam vero
-                      debitis, voluptate temporibus numquam aliquam impedit
-                      autem eveniet assumenda voluptates sit alias deleniti
-                      culpa labore fugiat minima asperiores? Deleniti nemo nisi
-                      ea impedit iure amet maiores qui sint libero incidunt
-                      suscipit necessitatibus cumque commodi, excepturi id, quas
-                      dolorem magni saepe modi officiis distinctio mollitia
-                      adipisci, ut error? Nesciunt temporibus, quidem magnam
-                      aspernatur fuga facilis nostrum beatae amet nemo omnis
-                      corrupti similique ut excepturi minus aliquam quas odio.
-                      Quisquam ullam porro, aliquid accusantium quis aliquam
-                      voluptates ut itaque, nobis reiciendis sunt impedit
-                      numquam libero minus ipsam rem deleniti est doloribus
-                      obcaecati quos officiis esse cumque reprehenderit?
-                      Possimus ullam cum nisi. Corrupti maiores iure
-                      reprehenderit! Vero dolorem tempora commodi molestiae
-                      adipisci excepturi quam soluta assumenda? Minima
-                      voluptatum totam delectus eligendi officiis, unde ea
-                      recusandae impedit labore voluptate saepe perspiciatis
-                      consequuntur laborum nobis, a veritatis.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="crew">
-            <span class="header__1"> Капитан и дирекция круиза </span>
-            <div class="crew__items">
-              <div class="crew__item">
-                <div class="crew__item__photo">
-                  <img src="img/cruise_director.png" alt="" />
-                </div>
-                <div class="crew__item__position">Директор круиза</div>
-                <div class="crew__item__fullname">
-                  Захарова Ольга Владимировна
-                </div>
-              </div>
-              <div class="crew__item">
-                <div class="crew__item__photo">
-                  <img src="img/captain.png" alt="" />
-                </div>
-                <div class="crew__item__position">Капитан</div>
-                <div class="crew__item__fullname">
-                  Быков Алексей Анатольевич
-                </div>
-              </div>
-              <div class="crew__item">
-                <div class="crew__item__photo">
-                  <img src="img/restuorant_director.png" alt="" />
-                </div>
-                <div class="crew__item__position">Директор ресторана</div>
-                <div class="crew__item__fullname">
-                  Чернова Елена Вячеславовна
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="cabins">
-            <span class="header__1">Cхема палуб теплохода “Лунная Соната”</span>
-            <div class="conventions">
-              <div class="conventions__item">Условные обозначения:</div>
-              <div class="conventions__item">
-                <div class="conventions__circle">2+1</div>
-                Количество мест в каюте (основные +дополнительные)
-              </div>
-              <div class="conventions__item">
-                <div class="conventions__circle">3</div>
-                Каюта имеет 2 яруса
-              </div>
-            </div>
-            <div class="decks">
-              <div class="deck1">
-                <div class="deck__title">Шлюпочная палуба</div>
-                <div class="deck"></div>
-              </div>
-              <div class="deck2">
-                <div class="deck__title">Средняя палуба</div>
-                <div class="deck"></div>
-              </div>
-              <div class="deck3">
-                <div class="deck__title">Главная палуба</div>
-                <div class="deck"></div>
-              </div>
-              <div class="deck4">
-                <div class="deck__title">Нижняя палуба</div>
-                <div class="deck"></div>
-              </div>
-            </div>
-            <div class="cabin__types">
-              <div class="cabin__types__title">Типы кают:</div>
-              <div class="cabin__types__list">
-                <div class="a4h">
-                  <div class="type__rect"></div>
-                  <div class="type__title">A4H</div>
-                </div>
-                <div class="a2__comfort">
-                  <div class="type__rect"></div>
-                  <div class="type__title">A2 комфорт</div>
-                </div>
-                <div class="a1__plus__balcon">
-                  <div class="type__rect"></div>
-                  <div class="type__title">A1+ с балконом</div>
-                </div>
-                <div class="a2h">
-                  <div class="type__rect"></div>
-                  <div class="type__title">A2H</div>
-                </div>
-                <div class="a1">
-                  <div class="type__rect"></div>
-                  <div class="type__title">A1</div>
-                </div>
-                <div class="pol__lux__balcon__b">
-                  <div class="type__rect"></div>
-                  <div class="type__title">Полулюкс с балконом Б</div>
-                </div>
-                <div class="a4__3">
-                  <div class="type__rect"></div>
-                  <div class="type__title">А4(III)</div>
-                </div>
-                <div class="pol__lux">
-                  <div class="type__rect"></div>
-                  <div class="type__title">Полулюкс</div>
-                </div>
-                <div class="pol__lux__balcon__a">
-                  <div class="type__rect"></div>
-                  <div class="type__title">полулюкс с балкном A</div>
-                </div>
-                <div class="a2__3">
-                  <div class="type__rect"></div>
-                  <div class="type__title">А2(III)</div>
-                </div>
-                <div class="a1__comfort">
-                  <div class="type__rect"></div>
-                  <div class="type__title">A1 комфорт</div>
-                </div>
-                <div class="lux__balcon">
-                  <div class="type__rect"></div>
-                  <div class="type__title">Люкс с балкном</div>
-                </div>
-              </div>
-            </div>
-            <div class="th__cabins">
-              <div class="header__1">Каюты теплохода “Лунная Соната”</div>
-              <div class="deck__title">Подбор каюты</div>
-              <div class="cabin__filter">
-                <div>
-                  Колличество пассажиров
-                </div>
-                <div>
-                  Взрослых <i class="bi bi-dash-circle"></i> 1 <i class="bi bi-plus-circle"></i>
-                </div>
-                <div>
-                  Детей (2-11 лет) <i class="bi bi-dash-circle"></i> 1 <i class="bi bi-plus-circle"></i></i>
-                </div>
-                <div>
-                  Детей (12-17 лет) <i class="bi bi-dash-circle"></i> 1 <i class="bi bi-plus-circle"></i>
-                </div>
-                <div>
-                  <div class="filter__btn">
-                    ПОДОБРАТЬ
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="th__tab__content" data-tab="th-cruises"></div>
+        <div class="th__tab__content" data-tab="th-cruises"></div>
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
