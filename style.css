@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   width: 100%;
@@ -29,6 +30,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   text-align: center;
+  cursor: pointer;
 }
 .th__tab__item:last-child {
   border-radius: 0px 4px 4px 0px;
@@ -50,11 +52,13 @@ body {
 .th__about__links {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 30px 0;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  position: sticky;
 }
 .about__link__item {
   padding: 10px 36px;
@@ -81,17 +85,293 @@ body {
   font-size: 40px;
   color: #242424;
   display: block;
-  margin: 30px 0;
+  margin: 90px 0 30px 0;
 }
 .th__accordion {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+.th__accordion__item {
+  margin-bottom: 50px;
+  padding-right: 20px;
 }
 .th__accordion__item,
 .th__accordion__content {
   flex-basis: 50%;
   display: block;
+  max-width: 500px;
+}
+.th__accordion__item__title {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  color: #006ec7;
+}
+.th__accordion__item__title i {
+  font-size: 18px;
+  color: #585858;
 }
 .th__accordion__content {
   display: none;
+  padding: 35px 0;
+}
+.th__on__board {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.th__on__board .th__on__board__item {
+  flex-basis: 50%;
+  padding: 20px 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+.service__on__board {
+  max-width: 600px;
+  margin: 50px auto;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #919191;
+}
+.service__on__board__accordeon__block__title {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  color: #7e7e7e;
+  margin-bottom: 30px;
+}
+.service__on__board__accordeon__block__sub__title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #343434;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.service__on__board__accardeon__item__content {
+  display: none;
+  padding-bottom: 30px;
+}
+.service__on__board__accordeon__block__sub__title i {
+  color: #bbbbbb;
+}
+#crew {
+  text-align: center;
+}
+.crew__items {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+.crew__item {
+  max-width: 223px;
+  padding: 20px;
+}
+.crew__item__photo img {
+  width: 137px;
+  height: 137px;
+  border-radius: 100px;
+}
+.crew__item__position {
+  margin: 24px 0 16px 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #242424;
+}
+.crew__item__fullname {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #7e7e7e;
+  line-height: 22px;
+}
+.conventions {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  flex-wrap: wrap;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.conventions__item {
+  margin-right: 3rem;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #343434;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  vertical-align: middle;
+}
+.conventions__item:first-child {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+.conventions__item .conventions__circle {
+  border-radius: 100px;
+  border: 2px solid #006ec7;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  margin-right: 20px;
+  vertical-align: middle;
+  line-height: 40px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #343434;
+}
+.decks {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.deck__title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #343434;
+  margin: 24px 0 16px 0;
+}
+.deck {
+  height: 150px;
+  background-image: url("img/paluba1.png");
+  background-repeat: no-repeat;
+}
+.deck1 .deck {
+  background-position: 0 -17px;
+}
+.deck2 .deck {
+  background-position: 0 -184px;
+}
+.deck3 .deck {
+  background-position: 0 -350px;
+}
+.deck4 .deck {
+  background-position: 0 -515px;
+}
+.cabin__types {
+  display: flex;
+  margin-top: 50px;
+}
+.cabin__types__title {
+  width: 25%;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #343434;
+}
+.cabin__types__list {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cabin__types__list > div {
+  width: 33%;
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cabin__types__list .type__title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #343434;
+}
+.cabin__types__list .type__rect {
+  width: 24px;
+  height: 24px;
+  margin-right: 24px;
+}
+.cabin__types__list .a4h .type__rect {
+  background-color: #13243e;
+}
+.cabin__types__list .a2__comfort .type__rect {
+  background: #72ffff;
+}
+.cabin__types__list .a1__plus__balcon .type__rect {
+  background: #ffb341;
+}
+.cabin__types__list .a2h .type__rect {
+  background: #295aa3;
+}
+.cabin__types__list .a1 .type__rect {
+  background: #bfffff;
+}
+.cabin__types__list .pol__lux__balcon__b .type__rect {
+  background: #ff8731;
+}
+.cabin__types__list .a4__3 .type__rect {
+  background: #00b3ff;
+}
+.cabin__types__list .pol__lux .type__rect {
+  background: #fcff63;
+}
+.cabin__types__list .pol__lux__balcon__a .type__rect {
+  background: #ff4d00;
+}
+.cabin__types__list .a2__3 .type__rect {
+  background: #00d7e4;
+}
+.cabin__types__list .a1__comfort .type__rect {
+  background: #ffe454;
+}
+.cabin__types__list .lux__balcon .type__rect {
+  background: #c00202;
+}
+.cabin__filter {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #7e7e7e;
+  background: #e6f8fd;
+  padding: 34px 80px;
+  align-items: center;
+}
+.cabin__filter > div:first-child {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000;
+}
+.filter__btn {
+  background: #006ec7;
+  border-radius: 4px;
+  padding: 14px 18px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
 }
