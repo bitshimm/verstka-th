@@ -1,7 +1,7 @@
 $(function () {
   $(".th__tab__item").click(function () {
     let dataTabId = $(this).attr("data-tab"),
-      content = $('.th__tab__content[data-tab="' + dataTabId + '"]');
+      content = $('.th__tab__content[data-tab-content="' + dataTabId + '"]');
     $(".th__tab__item.active").removeClass("active");
     $(this).addClass("active");
     $(".th__tab__content").slideUp(200);

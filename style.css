@@ -101,6 +101,9 @@ body {
   font-size: 18px;
   color: #343434;
 }
+div[data-tab-content="th-cruises"]{
+  display: none;
+}
 .th__about__content .header__1,
 .th__cruises__content .header__1 {
   font-family: Raleway;
