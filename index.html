@@ -12,23 +12,46 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/39c6f8a859.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.31/example1/colorbox.min.css"
+        integrity="sha512-qDmL8zJf49wqgbTQEr0nsThYpyQkjc+ulm2zAjRXd/MCoUBuvd19fP2ugx7dnxtvMOzSJ1weNdSE+jbSnA4eWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.31/example1/colorbox.min.css" integrity="sha512-qDmL8zJf49wqgbTQEr0nsThYpyQkjc+ulm2zAjRXd/MCoUBuvd19fP2ugx7dnxtvMOzSJ1weNdSE+jbSnA4eWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.31/jquery.colorbox-min.js" integrity="sha512-vIQFGcvtyG7utDhKtdtJB8gZLnFdQramGsSaRNQ7yNWAnvRYAks5H2IQgvXzR8xzaSeqdcss6ZrzebbHdLECLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="style.css" />
-    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.31/jquery.colorbox-min.js"
+        integrity="sha512-vIQFGcvtyG7utDhKtdtJB8gZLnFdQramGsSaRNQ7yNWAnvRYAks5H2IQgvXzR8xzaSeqdcss6ZrzebbHdLECLQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
 
 <body>
     <div class="th__image" style="
-        background-image: url('/img/photo_th.png');
+        background-image:linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url('/img/photo_th.png');
         background-size: cover;
         background-position: center center;
-      "></div>
+      ">
+        <div class="th__title">
+            <div class="th__name">
+                Теплоход-пансионат «Лунная соната»
+            </div>
+            <div class="th__short__desc">
+                Новый большой теплоход-пансионат круизной компании «Созвездие»
+            </div>
+        </div>
+    </div>
     <div class="container__fluid">
         <div class="th__tabs">
             <div class="th__tab__item active" data-tab="th-about">
@@ -70,7 +93,7 @@
                     <div class="th__accordion">
                         <div class="th__accordion__item">
                             <div class="th__accordion__item__title">
-                                <div>Питание</div>
+                                <div><i class="fa-solid fa-utensils"></i>Питание</div>
                                 <div>
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </div>
@@ -85,7 +108,7 @@
                         </div>
                         <div class="th__accordion__item">
                             <div class="th__accordion__item__title">
-                                <div>Питание</div>
+                                <div><i class="fa-solid fa-utensils"></i>Развлечение</div>
                                 <div>
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </div>
@@ -100,7 +123,7 @@
                         </div>
                         <div class="th__accordion__item">
                             <div class="th__accordion__item__title">
-                                <div>Питание</div>
+                                <div><i class="fa-solid fa-utensils"></i>Питание</div>
                                 <div>
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </div>
@@ -115,7 +138,7 @@
                         </div>
                         <div class="th__accordion__item">
                             <div class="th__accordion__item__title">
-                                <div>Питание</div>
+                                <div><i class="fa-solid fa-utensils"></i>Питание</div>
                                 <div>
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </div>
@@ -130,7 +153,7 @@
                         </div>
                         <div class="th__accordion__item">
                             <div class="th__accordion__item__title">
-                                <div>Питание</div>
+                                <div><i class="fa-solid fa-utensils"></i>Питание</div>
                                 <div>
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </div>
@@ -145,19 +168,20 @@
                         </div>
                     </div>
                     <div class="th__on__board">
-                        <div class="th__on__board__item">Медицинский пункт</div>
-                        <div class="th__on__board__item">«Мюзик Холл»</div>
-                        <div class="th__on__board__item">Кофейня «Бетховен»</div>
-                        <div class="th__on__board__item">2 ресторана</div>
-                        <div class="th__on__board__item">Бар на солнечной палубе</div>
-                        <div class="th__on__board__item">
+                        <div class="th__on__board__item"><i class="fa-solid fa-music"></i>Медицинский пункт</div>
+                        <div class="th__on__board__item"><i class="fa-solid fa-music"></i>«Мюзик Холл»</div>
+                        <div class="th__on__board__item"><i class="fa-solid fa-music"></i>Кофейня «Бетховен»</div>
+                        <div class="th__on__board__item"><i class="fa-solid fa-music"></i>2 ресторана</div>
+                        <div class="th__on__board__item"><i class="fa-solid fa-music"></i>Бар на солнечной палубе</div>
+                        <div class="th__on__board__item"><i class="fa-solid fa-music"></i>
                             Бесшумные мультиформатные дискотеки в наушниках
                         </div>
-                        <div class="th__on__board__item">Широкоформатный кинотеатр</div>
-                        <div class="th__on__board__item">Пункт проката</div>
-                        <div class="th__on__board__item">Мастерская «Самоделкино»</div>
-                        <div class="th__on__board__item">Сауна</div>
-                        <div class="th__on__board__item">Спутниковое телевидение</div>
+                        <div class="th__on__board__item"><i class="fa-solid fa-music"></i>Широкоформатный кинотеатр
+                        </div>
+                        <div class="th__on__board__item"><i class="fa-solid fa-music"></i>Пункт проката</div>
+                        <div class="th__on__board__item"><i class="fa-solid fa-music"></i>Мастерская «Самоделкино»</div>
+                        <div class="th__on__board__item"><i class="fa-solid fa-music"></i>Сауна</div>
+                        <div class="th__on__board__item"><i class="fa-solid fa-music"></i>Спутниковое телевидение</div>
                     </div>
                     <div class="service__on__board">
                         <div class="service__on__board__accordeon">
@@ -192,37 +216,11 @@
                                         </div>
                                     </div>
                                     <div class="service__on__board__accardeon__item__content">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                        Vero eius dolor fugiat quidem quam unde laborum. Quibusdam
-                                        laudantium iste sint fugit deserunt, ab dolorum amet cum,
-                                        reiciendis, exercitationem eveniet. Expedita. Lorem ipsum
-                                        dolor sit amet consectetur adipisicing elit. Adipisci, in.
-                                        Tempore culpa quidem accusantium reiciendis, error illum
-                                        neque cupiditate, pariatur dolorum officiis fugit in eaque
-                                        ullam fuga illo itaque enim, eum sapiente. Veniam voluptas
-                                        itaque corrupti at, fugiat assumenda eos minus doloribus
-                                        vero voluptatem temporibus beatae maxime repellendus
-                                        debitis eum ex voluptatum repudiandae odit ipsum. Enim,
-                                        maiores consequatur! Tenetur officia aperiam consequatur
-                                        repellat veritatis corporis nesciunt assumenda
-                                        exercitationem maxime dolorum! Nobis eligendi adipisci
-                                        obcaecati earum amet nisi quibusdam libero consequatur
-                                        animi ducimus illum magnam ab quae iure ad illo a enim,
-                                        dolores soluta porro! Facere, ut? Hic in eius odio
-                                        quibusdam obcaecati cupiditate voluptatibus rem deserunt
-                                        sint consequuntur iure dolorum culpa, facere laborum
-                                        consectetur quidem aliquam cumque repellat quas eos
-                                        quaerat ex asperiores. Eius quas voluptatum laboriosam
-                                        unde, facere animi debitis architecto harum tempora
-                                        repudiandae corporis! Fugiat reprehenderit, eum eos
-                                        blanditiis debitis delectus nostrum sed, culpa iste ab non
-                                        aliquid illum? Praesentium, pariatur debitis quae amet
-                                        aperiam magni natus nihil a exercitationem ipsum
-                                        consequuntur molestiae, repudiandae excepturi commodi
-                                        dolorem sint. Odit quis error beatae autem tempora ad
-                                        cupiditate iste assumenda illo sequi vitae deleniti,
-                                        magnam sint laudantium, minus harum, quo modi aut! Veniam,
-                                        pariatur velit eos fugit soluta commodi ullam!
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor in eos tempora
+                                        officia iste assumenda quibusdam, consequatur ipsam quo rem, laudantium commodi
+                                        sunt soluta? Animi, dicta tempora pariatur quod nobis exercitationem tenetur
+                                        deleniti vel totam impedit earum explicabo labore ipsam quos, aliquam quae
+                                        perferendis, iusto ex. Facilis distinctio qui optio!
                                     </div>
                                 </div>
                             </div>
@@ -238,33 +236,11 @@
                                         </div>
                                     </div>
                                     <div class="service__on__board__accardeon__item__content">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Eum veniam hic, sit, at excepturi autem ea numquam eos
-                                        rem, temporibus quaerat ducimus ab officia inventore!
-                                        Laborum placeat harum voluptatum corporis, velit expedita
-                                        blanditiis officiis adipisci ratione nobis impedit officia
-                                        ipsa soluta, sint saepe commodi. Libero inventore vero
-                                        sint possimus nihil ad facere perferendis error aut nam
-                                        veniam rem tenetur recusandae, aliquid illo dolor optio?
-                                        Sapiente veniam et optio quis unde praesentium pariatur
-                                        quaerat, iusto eligendi suscipit. Veniam, blanditiis.
-                                        Molestiae temporibus, debitis, facilis ipsum enim soluta
-                                        architecto cupiditate, officiis quaerat dolorem a amet
-                                        necessitatibus doloribus ipsam sunt similique rem! Tempore
-                                        recusandae adipisci vero at ipsa quibusdam aliquam
-                                        molestias, officia eos dolore cumque, expedita quisquam
-                                        ullam, aut dignissimos. Unde voluptates impedit in
-                                        corrupti magni. Ipsam quis quam veritatis, placeat impedit
-                                        porro rerum. Accusantium sequi facere iusto non
-                                        perspiciatis quod ipsam quidem ipsa exercitationem
-                                        laboriosam consequuntur, commodi porro repellendus ut
-                                        similique natus dolore enim, alias hic quis aperiam quos
-                                        qui. Adipisci deserunt ipsam ad. Labore consequatur id
-                                        odio, voluptas ipsum ab! Tempora in ut culpa quasi nemo
-                                        voluptas illo a magnam officiis praesentium labore debitis
-                                        sunt minus maxime modi, facilis libero natus voluptate.
-                                        Sapiente quos suscipit aspernatur, ea natus sint harum
-                                        autem. Autem.
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor in eos tempora
+                                        officia iste assumenda quibusdam, consequatur ipsam quo rem, laudantium commodi
+                                        sunt soluta? Animi, dicta tempora pariatur quod nobis exercitationem tenetur
+                                        deleniti vel totam impedit earum explicabo labore ipsam quos, aliquam quae
+                                        perferendis, iusto ex. Facilis distinctio qui optio!
                                     </div>
                                 </div>
                                 <div class="service__on__board__accardeon__item">
@@ -275,34 +251,11 @@
                                         </div>
                                     </div>
                                     <div class="service__on__board__accardeon__item__content">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Velit assumenda sed recusandae quidem, placeat aperiam cum
-                                        incidunt itaque veritatis pariatur debitis. Magni, quo
-                                        consequatur rem repudiandae non molestiae dignissimos
-                                        incidunt sit nobis enim corrupti iste? Amet, soluta.
-                                        Debitis ab, neque modi ipsum commodi doloribus numquam
-                                        harum veritatis hic aliquam blanditiis enim rerum ipsam et
-                                        eaque in eligendi perspiciatis accusantium quo quae
-                                        adipisci! Sunt quo tenetur consequuntur veniam vero
-                                        debitis, voluptate temporibus numquam aliquam impedit
-                                        autem eveniet assumenda voluptates sit alias deleniti
-                                        culpa labore fugiat minima asperiores? Deleniti nemo nisi
-                                        ea impedit iure amet maiores qui sint libero incidunt
-                                        suscipit necessitatibus cumque commodi, excepturi id, quas
-                                        dolorem magni saepe modi officiis distinctio mollitia
-                                        adipisci, ut error? Nesciunt temporibus, quidem magnam
-                                        aspernatur fuga facilis nostrum beatae amet nemo omnis
-                                        corrupti similique ut excepturi minus aliquam quas odio.
-                                        Quisquam ullam porro, aliquid accusantium quis aliquam
-                                        voluptates ut itaque, nobis reiciendis sunt impedit
-                                        numquam libero minus ipsam rem deleniti est doloribus
-                                        obcaecati quos officiis esse cumque reprehenderit?
-                                        Possimus ullam cum nisi. Corrupti maiores iure
-                                        reprehenderit! Vero dolorem tempora commodi molestiae
-                                        adipisci excepturi quam soluta assumenda? Minima
-                                        voluptatum totam delectus eligendi officiis, unde ea
-                                        recusandae impedit labore voluptate saepe perspiciatis
-                                        consequuntur laborum nobis, a veritatis.
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor in eos tempora
+                                        officia iste assumenda quibusdam, consequatur ipsam quo rem, laudantium commodi
+                                        sunt soluta? Animi, dicta tempora pariatur quod nobis exercitationem tenetur
+                                        deleniti vel totam impedit earum explicabo labore ipsam quos, aliquam quae
+                                        perferendis, iusto ex. Facilis distinctio qui optio!
                                     </div>
                                 </div>
                                 <div class="service__on__board__accardeon__item">
@@ -313,34 +266,11 @@
                                         </div>
                                     </div>
                                     <div class="service__on__board__accardeon__item__content">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Velit assumenda sed recusandae quidem, placeat aperiam cum
-                                        incidunt itaque veritatis pariatur debitis. Magni, quo
-                                        consequatur rem repudiandae non molestiae dignissimos
-                                        incidunt sit nobis enim corrupti iste? Amet, soluta.
-                                        Debitis ab, neque modi ipsum commodi doloribus numquam
-                                        harum veritatis hic aliquam blanditiis enim rerum ipsam et
-                                        eaque in eligendi perspiciatis accusantium quo quae
-                                        adipisci! Sunt quo tenetur consequuntur veniam vero
-                                        debitis, voluptate temporibus numquam aliquam impedit
-                                        autem eveniet assumenda voluptates sit alias deleniti
-                                        culpa labore fugiat minima asperiores? Deleniti nemo nisi
-                                        ea impedit iure amet maiores qui sint libero incidunt
-                                        suscipit necessitatibus cumque commodi, excepturi id, quas
-                                        dolorem magni saepe modi officiis distinctio mollitia
-                                        adipisci, ut error? Nesciunt temporibus, quidem magnam
-                                        aspernatur fuga facilis nostrum beatae amet nemo omnis
-                                        corrupti similique ut excepturi minus aliquam quas odio.
-                                        Quisquam ullam porro, aliquid accusantium quis aliquam
-                                        voluptates ut itaque, nobis reiciendis sunt impedit
-                                        numquam libero minus ipsam rem deleniti est doloribus
-                                        obcaecati quos officiis esse cumque reprehenderit?
-                                        Possimus ullam cum nisi. Corrupti maiores iure
-                                        reprehenderit! Vero dolorem tempora commodi molestiae
-                                        adipisci excepturi quam soluta assumenda? Minima
-                                        voluptatum totam delectus eligendi officiis, unde ea
-                                        recusandae impedit labore voluptate saepe perspiciatis
-                                        consequuntur laborum nobis, a veritatis.
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor in eos tempora
+                                        officia iste assumenda quibusdam, consequatur ipsam quo rem, laudantium commodi
+                                        sunt soluta? Animi, dicta tempora pariatur quod nobis exercitationem tenetur
+                                        deleniti vel totam impedit earum explicabo labore ipsam quos, aliquam quae
+                                        perferendis, iusto ex. Facilis distinctio qui optio!
                                     </div>
                                 </div>
                                 <div class="service__on__board__accardeon__item">
@@ -351,34 +281,11 @@
                                         </div>
                                     </div>
                                     <div class="service__on__board__accardeon__item__content">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Velit assumenda sed recusandae quidem, placeat aperiam cum
-                                        incidunt itaque veritatis pariatur debitis. Magni, quo
-                                        consequatur rem repudiandae non molestiae dignissimos
-                                        incidunt sit nobis enim corrupti iste? Amet, soluta.
-                                        Debitis ab, neque modi ipsum commodi doloribus numquam
-                                        harum veritatis hic aliquam blanditiis enim rerum ipsam et
-                                        eaque in eligendi perspiciatis accusantium quo quae
-                                        adipisci! Sunt quo tenetur consequuntur veniam vero
-                                        debitis, voluptate temporibus numquam aliquam impedit
-                                        autem eveniet assumenda voluptates sit alias deleniti
-                                        culpa labore fugiat minima asperiores? Deleniti nemo nisi
-                                        ea impedit iure amet maiores qui sint libero incidunt
-                                        suscipit necessitatibus cumque commodi, excepturi id, quas
-                                        dolorem magni saepe modi officiis distinctio mollitia
-                                        adipisci, ut error? Nesciunt temporibus, quidem magnam
-                                        aspernatur fuga facilis nostrum beatae amet nemo omnis
-                                        corrupti similique ut excepturi minus aliquam quas odio.
-                                        Quisquam ullam porro, aliquid accusantium quis aliquam
-                                        voluptates ut itaque, nobis reiciendis sunt impedit
-                                        numquam libero minus ipsam rem deleniti est doloribus
-                                        obcaecati quos officiis esse cumque reprehenderit?
-                                        Possimus ullam cum nisi. Corrupti maiores iure
-                                        reprehenderit! Vero dolorem tempora commodi molestiae
-                                        adipisci excepturi quam soluta assumenda? Minima
-                                        voluptatum totam delectus eligendi officiis, unde ea
-                                        recusandae impedit labore voluptate saepe perspiciatis
-                                        consequuntur laborum nobis, a veritatis.
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor in eos tempora
+                                        officia iste assumenda quibusdam, consequatur ipsam quo rem, laudantium commodi
+                                        sunt soluta? Animi, dicta tempora pariatur quod nobis exercitationem tenetur
+                                        deleniti vel totam impedit earum explicabo labore ipsam quos, aliquam quae
+                                        perferendis, iusto ex. Facilis distinctio qui optio!
                                     </div>
                                 </div>
                                 <div class="service__on__board__accardeon__item">
@@ -389,34 +296,11 @@
                                         </div>
                                     </div>
                                     <div class="service__on__board__accardeon__item__content">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Velit assumenda sed recusandae quidem, placeat aperiam cum
-                                        incidunt itaque veritatis pariatur debitis. Magni, quo
-                                        consequatur rem repudiandae non molestiae dignissimos
-                                        incidunt sit nobis enim corrupti iste? Amet, soluta.
-                                        Debitis ab, neque modi ipsum commodi doloribus numquam
-                                        harum veritatis hic aliquam blanditiis enim rerum ipsam et
-                                        eaque in eligendi perspiciatis accusantium quo quae
-                                        adipisci! Sunt quo tenetur consequuntur veniam vero
-                                        debitis, voluptate temporibus numquam aliquam impedit
-                                        autem eveniet assumenda voluptates sit alias deleniti
-                                        culpa labore fugiat minima asperiores? Deleniti nemo nisi
-                                        ea impedit iure amet maiores qui sint libero incidunt
-                                        suscipit necessitatibus cumque commodi, excepturi id, quas
-                                        dolorem magni saepe modi officiis distinctio mollitia
-                                        adipisci, ut error? Nesciunt temporibus, quidem magnam
-                                        aspernatur fuga facilis nostrum beatae amet nemo omnis
-                                        corrupti similique ut excepturi minus aliquam quas odio.
-                                        Quisquam ullam porro, aliquid accusantium quis aliquam
-                                        voluptates ut itaque, nobis reiciendis sunt impedit
-                                        numquam libero minus ipsam rem deleniti est doloribus
-                                        obcaecati quos officiis esse cumque reprehenderit?
-                                        Possimus ullam cum nisi. Corrupti maiores iure
-                                        reprehenderit! Vero dolorem tempora commodi molestiae
-                                        adipisci excepturi quam soluta assumenda? Minima
-                                        voluptatum totam delectus eligendi officiis, unde ea
-                                        recusandae impedit labore voluptate saepe perspiciatis
-                                        consequuntur laborum nobis, a veritatis.
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor in eos tempora
+                                        officia iste assumenda quibusdam, consequatur ipsam quo rem, laudantium commodi
+                                        sunt soluta? Animi, dicta tempora pariatur quod nobis exercitationem tenetur
+                                        deleniti vel totam impedit earum explicabo labore ipsam quos, aliquam quae
+                                        perferendis, iusto ex. Facilis distinctio qui optio!
                                     </div>
                                 </div>
                             </div>
@@ -455,7 +339,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="cabins">
+                <div>
                     <span class="header__1">Cхема палуб теплохода “Лунная Соната”</span>
                     <div class="conventions">
                         <div class="conventions__item">Условные обозначения:</div>
@@ -539,7 +423,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="th__cabins">
+                    <div id="cabins" class="th__cabins">
                         <div class="header__1">Каюты теплохода “Лунная Соната”</div>
                         <div class="deck__title">Подбор каюты</div>
                         <div class="cabin__filter">
@@ -565,9 +449,10 @@
                         <div class="cabins__list">
                             <div class="cabin__item">
                                 <div class="cabin__photo__gallery">
-                                    <div class="photo__gallery__large" >
-                                        <a href="img/cabin__photo1.jpg" class="colorbox" data-fancybox><img src="img/cabin__photo1.jpg" alt=""></a>
-                                        
+                                    <div class="photo__gallery__large">
+                                        <a href="img/cabin__photo1.jpg" class="colorbox" data-fancybox><img
+                                                src="img/cabin__photo1.jpg" alt=""></a>
+
                                     </div>
                                     <div class="photo__gallery__thumbs">
                                         <div class="photo__gallery__thumb__item">
@@ -585,25 +470,375 @@
                                     </div>
                                 </div>
                                 <div class="cabin__item__type">
-                                    Полулюкс с балконом Б 
+                                    Полулюкс с балконом Б
                                 </div>
                                 <div class="cabin__item__short__desc">
-                                    Двухместная каюта увеличенной площади со всеми удобствами, расположенная на шлюпочной палубе
+                                    Двухместная каюта увеличенной площади со всеми удобствами, расположенная на
+                                    шлюпочной палубе
                                 </div>
                                 <div class="cabin__item__desc">
-                                    <div class="cabin__item__desc__btn">
+                                    <div class="cabin__item__desc__btn__show">
                                         Показать полностью <i class="fa-solid fa-chevron-down"></i>
                                     </div>
-                                    <div>
+                                    <div class="cabin__item__full__desc">
                                         <ul>
-                                        <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной палубе</li>
-                                        <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной палубе</li>
-                                        <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной палубе</li>
-                                        <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной палубе</li>
-                                        <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной палубе</li>
-                                    </ul>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                        </ul>
+                                        <div class="cabin__item__desc__btn__hide">
+                                            Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                        </div>
                                     </div>
-                                    
+                                </div>
+                            </div>
+                            <div class="cabin__item">
+                                <div class="cabin__photo__gallery">
+                                    <div class="photo__gallery__large">
+                                        <a href="img/cabin__photo1.jpg" class="colorbox" data-fancybox><img
+                                                src="img/cabin__photo1.jpg" alt=""></a>
+
+                                    </div>
+                                    <div class="photo__gallery__thumbs">
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo2.jpg" alt="">
+                                        </div>
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo3.jpg" alt="">
+                                        </div>
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo4.jpg" alt="">
+                                        </div>
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabin__item__type">
+                                    Полулюкс с балконом Б
+                                </div>
+                                <div class="cabin__item__short__desc">
+                                    Двухместная каюта увеличенной площади со всеми удобствами, расположенная на
+                                    шлюпочной палубе
+                                </div>
+                                <div class="cabin__item__desc">
+                                    <div class="cabin__item__desc__btn__show">
+                                        Показать полностью <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <div class="cabin__item__full__desc">
+                                        <ul>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                        </ul>
+                                        <div class="cabin__item__desc__btn__hide">
+                                            Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cabin__item">
+                                <div class="cabin__photo__gallery">
+                                    <div class="photo__gallery__large">
+                                        <a href="img/cabin__photo1.jpg" class="colorbox" data-fancybox><img
+                                                src="img/cabin__photo1.jpg" alt=""></a>
+
+                                    </div>
+                                    <div class="photo__gallery__thumbs">
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo2.jpg" alt="">
+                                        </div>
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo3.jpg" alt="">
+                                        </div>
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo4.jpg" alt="">
+                                        </div>
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabin__item__type">
+                                    Полулюкс с балконом Б
+                                </div>
+                                <div class="cabin__item__short__desc">
+                                    Двухместная каюта увеличенной площади со всеми удобствами, расположенная на
+                                    шлюпочной палубе
+                                </div>
+                                <div class="cabin__item__desc">
+                                    <div class="cabin__item__desc__btn__show">
+                                        Показать полностью <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <div class="cabin__item__full__desc">
+                                        <ul>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                        </ul>
+                                        <div class="cabin__item__desc__btn__hide">
+                                            Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cabin__item">
+                                <div class="cabin__photo__gallery">
+                                    <div class="photo__gallery__large">
+                                        <a href="img/cabin__photo1.jpg" class="colorbox" data-fancybox><img
+                                                src="img/cabin__photo1.jpg" alt=""></a>
+
+                                    </div>
+                                    <div class="photo__gallery__thumbs">
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo2.jpg" alt="">
+                                        </div>
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo3.jpg" alt="">
+                                        </div>
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo4.jpg" alt="">
+                                        </div>
+                                        <div class="photo__gallery__thumb__item">
+                                            <img src="img/cabin__photo5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cabin__item__type">
+                                    Полулюкс с балконом Б
+                                </div>
+                                <div class="cabin__item__short__desc">
+                                    Двухместная каюта увеличенной площади со всеми удобствами, расположенная на
+                                    шлюпочной палубе
+                                </div>
+                                <div class="cabin__item__desc">
+                                    <div class="cabin__item__desc__btn__show">
+                                        Показать полностью <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <div class="cabin__item__full__desc">
+                                        <ul>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                            <li>двухкомнатная каюта с возможностью размещения двух человек на шлюпочной
+                                                палубе</li>
+                                        </ul>
+                                        <div class="cabin__item__desc__btn__hide">
+                                            Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="th__photo__gallery">
+                    <div class="header__1">
+                        Фотогалерея «Маленького Принца»
+                    </div>
+                    <div class="th__photo__gallery__list">
+                        <div class="th__photo__gallery__item" style="background-image: url('img/slider1.png');"></div>
+                        <div class="th__photo__gallery__item" style="background-image: url('img/slider2.jpeg');"></div>
+                        <div class="th__photo__gallery__item" style="background-image: url('img/slider3.jpeg');"></div>
+                        <div class="th__photo__gallery__item" style="background-image: url('img/slider4.jpeg');"></div>
+                        <div class="th__photo__gallery__item" style="background-image: url('img/slider5.png');"></div>
+                        <div class="th__photo__gallery__item" style="background-image: url('img/slider6.jpeg');"></div>
+                    </div>
+                </div>
+                <div class="th__sales" id="sales">
+                    <div class="th__sales__title">
+                        <div class="header__1">
+                            Скидки
+                        </div>
+                        <div>
+                            Полный список акций
+                        </div>
+                    </div>
+                    <div class="th__sales__list">
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Свой кешбек
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Акция действует в период с 13.09.2021 по 20.09.2021
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Молодоженам
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Предоставляется самим молодоженам, а также их
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Имениннику
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Предоставляется только имениннику при
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Сотрудникам силовых ведомств
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Предоставляется только имениннику при
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Событие
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Предоставляется парам, у которых в 2021 году юбилей
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Постоянному клиенту
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Предоставляется со всеми видами скидок, кроме
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Пенсионерам
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Предоставляется всем туристам старше 55 лет,
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Группам
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                5% – группам 10 – 15 человек
+                                7% – группам 16 – 30 человек
+                                9% – группам 31 – 50 человек
+                                10% – группам более 51 человека
+                                Руководитель для группы от 45 человек (44+1) – бесплатно.
+
+                                Групповые скидки не предоставляются вместе с другими видами скидок и акций, кроме скидки
+                                постоянного клиента, сезонной скидки и скидок за размещение.
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Группам
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                5% – группам 10 – 15 человек
+                                7% – группам 16 – 30 человек
+                                9% – группам 31 – 50 человек
+                                10% – группам более 51 человека
+                                Руководитель для группы от 45 человек (44+1) – бесплатно.
+
+                                Групповые скидки не предоставляются вместе с другими видами скидок и акций, кроме скидки
+                                постоянного клиента, сезонной скидки и скидок за размещение.
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Группам
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                5% – группам 10 – 15 человек
+                                7% – группам 16 – 30 человек
+                                9% – группам 31 – 50 человек
+                                10% – группам более 51 человека
+                                Руководитель для группы от 45 человек (44+1) – бесплатно.
+
+                                Групповые скидки не предоставляются вместе с другими видами скидок и акций, кроме скидки
+                                постоянного клиента, сезонной скидки и скидок за размещение.
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
                                 </div>
                             </div>
                         </div>
@@ -611,7 +846,197 @@
                 </div>
             </div>
         </div>
-        <div class="th__tab__content" data-tab="th-cruises"></div>
+        <div class="th__tab__content" data-tab="th-cruises">
+            <div class="th__about__links">
+                <div class="about__link__item"><a href="#sales2">Скидки</a></div>
+                <div class="about__link__item"><a href="#cruises">Круизы</a></div>
+                <div class="about__link__item"><a href="#reviews">Отзывы</a></div>
+            </div>
+            <div class="th__cruises__content">
+                <div class="th__sales" id="sales2">
+                    <div class="th__sales__title">
+                        <div class="header__1">
+                            Скидки
+                        </div>
+                        <div>
+                            Полный список акций
+                        </div>
+                    </div>
+                    <div class="th__sales__list">
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Свой кешбек
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Акция действует в период с 13.09.2021 по 20.09.2021
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Молодоженам
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Предоставляется самим молодоженам, а также их
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Имениннику
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Предоставляется только имениннику при
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Сотрудникам силовых ведомств
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Предоставляется только имениннику при
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Событие
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Предоставляется парам, у которых в 2021 году юбилей
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Постоянному клиенту
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Предоставляется со всеми видами скидок, кроме
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Пенсионерам
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                Предоставляется всем туристам старше 55 лет,
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Группам
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                5% – группам 10 – 15 человек
+                                7% – группам 16 – 30 человек
+                                9% – группам 31 – 50 человек
+                                10% – группам более 51 человека
+                                Руководитель для группы от 45 человек (44+1) – бесплатно.
+
+                                Групповые скидки не предоставляются вместе с другими видами скидок и акций, кроме скидки
+                                постоянного клиента, сезонной скидки и скидок за размещение.
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Группам
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                5% – группам 10 – 15 человек
+                                7% – группам 16 – 30 человек
+                                9% – группам 31 – 50 человек
+                                10% – группам более 51 человека
+                                Руководитель для группы от 45 человек (44+1) – бесплатно.
+
+                                Групповые скидки не предоставляются вместе с другими видами скидок и акций, кроме скидки
+                                постоянного клиента, сезонной скидки и скидок за размещение.
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th__sale__item">
+                            <div class="th__sale__item_icon">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <div class="th__sale__item_title">
+                                Группам
+                            </div>
+                            <div class="th__sale__item_desc th__sale__item_desc__hide">
+                                5% – группам 10 – 15 человек
+                                7% – группам 16 – 30 человек
+                                9% – группам 31 – 50 человек
+                                10% – группам более 51 человека
+                                Руководитель для группы от 45 человек (44+1) – бесплатно.
+
+                                Групповые скидки не предоставляются вместе с другими видами скидок и акций, кроме скидки
+                                постоянного клиента, сезонной скидки и скидок за размещение.
+                                <div class="th__sale__desc__hide">
+                                    Скрыть описание <i class="fa-solid fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="th__cruises__block">
+                    <div class="header__1">
+                        Круизы теплохода “Лунная Соната”
+                    </div>
+                    <div class="cruise__year__filter">
+                        <div>Круизы 2021</div>
+                        <div>Круизы 2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

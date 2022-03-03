@@ -81,11 +81,74 @@ $(function () {
   });
   $(".photo__gallery__thumb__item").click(function () {
     let $galleryLink = $(this).find("img").attr("src");
-    $(".photo__gallery__large").find("img").attr("src", $galleryLink);
-    $(".photo__gallery__large").find("a").attr("href", $galleryLink);
+    $(this)
+      .closest(".cabin__item")
+      .find(".photo__gallery__large img")
+      .attr("src", $galleryLink);
+    $(this)
+      .closest(".cabin__item")
+      .find(".photo__gallery__large a")
+      .attr("href", $galleryLink);
   });
   $(".photo__gallery__large a.colorbox").colorbox({
     innerHeight: 600,
     current: "Фото {current} из {total}",
+  });
+  $(".cabin__item__desc__btn__show").click(function () {
+    $(this)
+      .closest(".cabins__list")
+      .find(".cabin__item__full__desc")
+      .slideUp(150);
+    $(this)
+      .closest(".cabins__list")
+      .find(".cabin__item__desc__btn__show")
+      .show();
+    $(this)
+      .addClass("active")
+      .hide()
+      .siblings(".cabin__item__full__desc")
+      .slideToggle(150);
+  });
+  $(".cabin__item__desc__btn__hide").click(function () {
+    $(this)
+      .closest(".cabin__item")
+      .find(".cabin__item__desc__btn__show")
+      .removeClass("active")
+      .show()
+      .siblings(".cabin__item__full__desc")
+      .slideToggle(150);
+  });
+  $(".th__photo__gallery__list").slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    adaptiveHeight: true,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow:
+      '<button class="slick__prev"><i class="fa-solid fa-chevron-left"></i></button>',
+    nextArrow:
+      '<button class="slick__next"><i class="fa-solid fa-chevron-right"></i></button>',
+  });
+  $(".th__sale__item").click(function () {
+    if (
+      $(this).find(".th__sale__item_desc").hasClass("th__sale__item_desc__hide")
+    ) {
+      $(this)
+        .closest(".th__sales__list")
+        .find(".th__sale__item_desc")
+        .addClass("th__sale__item_desc__hide");
+      $(this)
+        .find(".th__sale__item_desc")
+        .removeClass("th__sale__item_desc__hide");
+    } else {
+      $(this)
+        .find(".th__sale__item_desc")
+        .addClass("th__sale__item_desc__hide");
+    }
+  });
+  $(".cruise__year__filter > div").click(function () {
+    $(this).closest(".cruise__year__filter").find("div").removeClass("active");
+    $(this).toggleClass("active");
   });
 });
