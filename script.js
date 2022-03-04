@@ -185,7 +185,6 @@ $(function () {
     $(this).closest(".departure__from__dropdown__list").slideToggle();
   });
 
-
   $(".cruise__list__view__dropdown__title").click(function () {
     if ($(this).hasClass("active")) {
       $(this)
@@ -218,5 +217,11 @@ $(function () {
       .find(".cruise__list__view__dropdown__title span")
       .text($selectedCity);
     $(this).closest(".cruise__list__view__dropdown__list").slideToggle();
+  });
+  $(".cruise__list__item__price i").mouseover(function () {
+    $(this).find(".item__price__tooltip").toggle();
+  });
+  $(".cruise__list__item__price i").mouseout(function () {
+    $(this).find(".item__price__tooltip").toggle();
   });
 });
