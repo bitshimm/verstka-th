@@ -151,4 +151,72 @@ $(function () {
     $(this).closest(".cruise__year__filter").find("div").removeClass("active");
     $(this).toggleClass("active");
   });
+  $(".departure__from__dropdown__title").click(function () {
+    if ($(this).hasClass("active")) {
+      $(this)
+        .removeClass("active")
+        .find(".fa-chevron-up")
+        .removeClass("fa-chevron-up")
+        .addClass("fa-chevron-down");
+      $(this).siblings(".departure__from__dropdown__list").slideToggle();
+    } else {
+      $(this)
+        .addClass("active")
+        .find(".fa-chevron-down")
+        .removeClass("fa-chevron-down")
+        .addClass("fa-chevron-up");
+      $(this).siblings(".departure__from__dropdown__list").slideToggle();
+    }
+  });
+  $(".departure__from__dropdown__list__item").click(function () {
+    let $selectedCity = $(this).attr("data-departure-from");
+
+    $(this)
+      .closest(".departure__from__dropdown")
+      .find(".departure__from__dropdown__title")
+      .removeClass("active")
+      .find(".fa-chevron-up")
+      .removeClass("fa-chevron-up")
+      .addClass("fa-chevron-down");
+    $(this)
+      .closest(".departure__from__dropdown")
+      .find(".departure__from__dropdown__title span")
+      .text($selectedCity);
+    $(this).closest(".departure__from__dropdown__list").slideToggle();
+  });
+
+
+  $(".cruise__list__view__dropdown__title").click(function () {
+    if ($(this).hasClass("active")) {
+      $(this)
+        .removeClass("active")
+        .find(".fa-chevron-up")
+        .removeClass("fa-chevron-up")
+        .addClass("fa-chevron-down");
+      $(this).siblings(".cruise__list__view__dropdown__list").slideToggle();
+    } else {
+      $(this)
+        .addClass("active")
+        .find(".fa-chevron-down")
+        .removeClass("fa-chevron-down")
+        .addClass("fa-chevron-up");
+      $(this).siblings(".cruise__list__view__dropdown__list").slideToggle();
+    }
+  });
+  $(".cruise__list__view__dropdown__list__item").click(function () {
+    let $selectedCity = $(this).attr("data-departure-from");
+
+    $(this)
+      .closest(".cruise__list__view__dropdown")
+      .find(".cruise__list__view__dropdown__title")
+      .removeClass("active")
+      .find(".fa-chevron-up")
+      .removeClass("fa-chevron-up")
+      .addClass("fa-chevron-down");
+    $(this)
+      .closest(".cruise__list__view__dropdown")
+      .find(".cruise__list__view__dropdown__title span")
+      .text($selectedCity);
+    $(this).closest(".cruise__list__view__dropdown__list").slideToggle();
+  });
 });
