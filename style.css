@@ -184,10 +184,12 @@ div[data-tab-content="th-cruises"] {
   padding: 35px 0;
 }
 .th__on__board {
-  margin-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 .th__on__board .th__on__board__item {
   flex-basis: 15%;
@@ -198,11 +200,7 @@ div[data-tab-content="th-cruises"] {
   font-size: 20px;
   position: relative;
   font-feature-settings: "pnum" on, "lnum" on;
-}
-.th__on__board .th__on__board__item i {
-  color: #006ec7;
-  font-size: 27px;
-  margin-right: 15px;
+  text-align: center;
 }
 .th__on__board__item .on__board__tooltip {
   position: absolute;
@@ -787,6 +785,8 @@ div[data-tab-content="th-cruises"] {
   position: absolute;
   background-color: #fff;
   padding-top: 20px;
+  z-index: 1;
+  width: 100%;
 }
 .departure__from__dropdown__list__item,
 .cruise__list__view__dropdown__list__item {
@@ -796,12 +796,12 @@ div[data-tab-content="th-cruises"] {
 .departure__from__dropdown__list__item:hover {
   background: #e6f8fd;
 }
-.cruise__list {
+.cruise__list.grid_view {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.cruise__list__item {
+.cruise__list.grid_view .cruise__list__item {
   width: 32%;
   box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12),
     0px 10px 32px -4px rgba(24, 39, 75, 0.1);
@@ -809,28 +809,28 @@ div[data-tab-content="th-cruises"] {
   margin: 0 auto;
 }
 @media (max-width: 960px) {
-  .cruise__list__item {
+  .cruise__list.grid_view .cruise__list__item {
     width: 45%;
   }
 }
 @media (max-width: 540px) {
-  .cruise__list__item {
+  .cruise__list.grid_view .cruise__list__item {
     width: 89%;
   }
 }
-.cruise__list__item__photo {
+.cruise__list.grid_view .cruise__list__item__photo {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 207px;
   position: relative;
 }
-.cruise__list__item__photo img {
+.cruise__list.grid_view .cruise__list.grid_view .cruise__list__item__photo img {
   position: absolute;
   top: 12px;
   left: 12px;
 }
-.number__places__left {
+.cruise__list.grid_view .number__places__left {
   background-color: #d42e12;
   color: #fff;
   padding: 7px 11px;
@@ -840,12 +840,12 @@ div[data-tab-content="th-cruises"] {
   font-weight: bold;
   font-size: 13px;
 }
-.cruise__list__item__photo .number__places__left {
+.cruise__list.grid_view .cruise__list__item__photo .number__places__left {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.cruise__list__item__name {
+.cruise__list.grid_view .cruise__list__item__name {
   margin: 8px 0;
   font-family: Open Sans;
   font-style: normal;
@@ -853,18 +853,20 @@ div[data-tab-content="th-cruises"] {
   font-size: 12px;
   color: #bbbbbb;
 }
-.cruise__list__item__route {
+.cruise__list.grid_view .cruise__list__item__route {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   margin-bottom: 8px;
 }
-.cruise__list__item__date__days {
+.cruise__list.grid_view .cruise__list__item__date__days {
   display: flex;
   flex-wrap: wrap;
 }
-.cruise__list__item__date__days .cruise__list__item__date {
+.cruise__list.grid_view
+  .cruise__list__item__date__days
+  .cruise__list__item__date {
   margin-bottom: 8px;
   margin-right: 8px;
   font-family: Open Sans;
@@ -873,7 +875,9 @@ div[data-tab-content="th-cruises"] {
   font-size: 14px;
   color: #7e7e7e;
 }
-.cruise__list__item__date__days .cruise__list__item__days {
+.cruise__list.grid_view
+  .cruise__list__item__date__days
+  .cruise__list__item__days {
   margin-bottom: 8px;
   font-family: Open Sans;
   font-style: normal;
@@ -881,7 +885,7 @@ div[data-tab-content="th-cruises"] {
   font-size: 12px;
   color: #bbbbbb;
 }
-.cruise__list__item__price .item__price__tooltip {
+.cruise__list.grid_view .cruise__list__item__price .item__price__tooltip {
   display: none;
   position: absolute;
   background-color: #fff;
@@ -892,13 +896,16 @@ div[data-tab-content="th-cruises"] {
   box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12),
     0px 10px 32px -4px rgba(24, 39, 75, 0.1);
   padding: 10px 15px;
+  z-index: 1;
 }
-.cruise__list__item__price__sales {
+.cruise__list.grid_view .cruise__list__item__price__sales {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.cruise__list__item__price__sales .cruise__list__item__price {
+.cruise__list.grid_view
+  .cruise__list__item__price__sales
+  .cruise__list__item__price {
   font-family: Raleway;
   font-style: normal;
   font-weight: 500;
@@ -907,20 +914,28 @@ div[data-tab-content="th-cruises"] {
   font-feature-settings: "pnum" on, "lnum" on;
   margin: auto 0;
 }
-.cruise__list__item__price__sales .cruise__list__item__price i {
+.cruise__list.grid_view
+  .cruise__list__item__price__sales
+  .cruise__list__item__price
+  i {
   font-size: 16px;
   color: #7e7e7e;
   margin-left: 8px;
   position: relative;
 }
-.cruise__list__item__price__sales .cruise__list__item__sales {
+.cruise__list.grid_view
+  .cruise__list__item__price__sales
+  .cruise__list__item__sales {
   display: flex;
   flex-wrap: wrap;
 }
-.cruise__list__item__price__sales .cruise__list__item__sales > div {
+.cruise__list.grid_view
+  .cruise__list__item__price__sales
+  .cruise__list__item__sales
+  > div {
   padding-left: 10px;
 }
-.cruise__list__item__btn {
+.cruise__list.grid_view .cruise__list__item__btn {
   background-color: #006ec7;
   color: #fff;
   text-align: center;
@@ -931,4 +946,95 @@ div[data-tab-content="th-cruises"] {
   font-weight: bold;
   font-size: 14px;
   border-radius: 4px;
+  cursor: pointer;
 }
+.cruise__list.list_view .cruise__list__item {
+  box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12),
+    0px 10px 32px -4px rgba(24, 39, 75, 0.1);
+  background: #f8f8f8;
+  padding: 16px 32px 25px 32px;
+  margin: 10px 0;
+  font-family: Open Sans;
+  font-style: normal;
+}
+.cruise__list.list_view .cruise__list__item__th__name {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+}
+.cruise__list.list_view .cruise__list__item__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.cruise__list__item__free__cabins {
+  font-weight: normal;
+  font-size: 14px;
+  color: #242424;
+}
+.cruise__list.list_view .cruise__list__item__info {
+  display: flex;
+  justify-content: space-between;
+}
+.cruise__list.list_view .cruise__list__item__info__date {
+  display: flex;
+  justify-content: space-between;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+}
+.cruise__list.list_view .date__start__title {
+  font-size: 12px;
+  color: #919191;
+  margin-bottom: 8px;
+}
+.cruise__list.list_view .date__start__date {
+  font-size: 18px;
+  color: #242424;
+}
+.cruise__list.list_view .date__start__time {
+  font-size: 14px;
+  color: #242424;
+}
+.cruise__list.list_view .cruise__duration {
+  font-size: 12px;
+  color: #7e7e7e;
+}
+.cruise__list.list_view .date__start,
+.cruise__list.list_view .date__end {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cruise__list.list_view .cruise__duration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 15px;
+  text-align: center;
+}
+.cruise__list.list_view .cruise__list__item__info__route {
+  max-width: 489px;
+  font-size: 16px;
+  color: #7e7e7e;
+  align-self: end;
+}
+.cruise__list.list_view .cruise__list__item__info__bron{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cruise__list.list_view .info__bron__title {
+  font-size: 12px;
+  color: #919191;
+}
+.cruise__list.list_view .info__bron__btn {
+  font-weight: bold;
+  font-size: 14px;
+  background: #006ec7;
+  border-radius: 4px;
+  padding: 14px 18px;
+  color: #fff;
+  text-align: center;
+}
+

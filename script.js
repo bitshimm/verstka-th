@@ -90,10 +90,7 @@ $(function () {
       .find(".photo__gallery__large a")
       .attr("href", $galleryLink);
   });
-  $(".photo__gallery__large a.colorbox").colorbox({
-    innerHeight: 600,
-    current: "Фото {current} из {total}",
-  });
+  
   $(".cabin__item__desc__btn__show").click(function () {
     $(this)
       .closest(".cabins__list")
@@ -129,6 +126,9 @@ $(function () {
       '<button class="slick__prev"><i class="fa-solid fa-chevron-left"></i></button>',
     nextArrow:
       '<button class="slick__next"><i class="fa-solid fa-chevron-right"></i></button>',
+  });
+  $(".photo__gallery__large a.colorbox, .th__photo__gallery__list a.colorbox").colorbox({
+    innerHeight: 600,
   });
   $(".th__sale__item").click(function () {
     if (
