@@ -14,8 +14,8 @@ body {
 .th__title {
   max-width: 500px;
   position: absolute;
-  top: 275px;
-  right: 293px;
+  bottom: 15%;
+  right: 12%;
 }
 .th__name {
   font-family: Montserrat;
@@ -164,7 +164,6 @@ div[data-tab-content="th-cruises"] {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -174,6 +173,13 @@ div[data-tab-content="th-cruises"] {
 .th__accordion__item__title i {
   font-size: 18px;
   color: #585858;
+}
+.th__accordion__item__title > div:first-child{
+  width: 50px;
+  text-align: center;
+}
+.th__accordion__item__title > div:last-child{
+  margin-left: auto;
 }
 .th__accordion__item__title > div:first-child img {
   margin-right: 15px;
@@ -825,7 +831,7 @@ div[data-tab-content="th-cruises"] {
   height: 207px;
   position: relative;
 }
-.cruise__list.grid_view .cruise__list.grid_view .cruise__list__item__photo img {
+.cruise__list.grid_view .cruise__list__item__photo img {
   position: absolute;
   top: 12px;
   left: 12px;
@@ -1036,5 +1042,6 @@ div[data-tab-content="th-cruises"] {
   padding: 14px 18px;
   color: #fff;
   text-align: center;
+  cursor: pointer;
 }
 
